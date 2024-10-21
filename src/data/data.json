@@ -1,6 +1,25 @@
 {
     "users": [
         {
+            "id": 0,
+            "username": "admin",
+            "email": "admin@admin.com",
+            "password": "123456",
+            "playlists": [
+                {
+                    "id": 1,
+                    "name": "Rock Classics",
+                    "description": "The best rock songs from the 70s and 80s",
+                    "songs": [
+                        1,
+                        3,
+                        5,
+                        7
+                    ]
+                }
+            ]
+        },
+        {
             "id": 1,
             "username": "musicLover123",
             "email": "mailto:musiclover@example.com",
@@ -8,8 +27,8 @@
             "playlists": [
                 {
                     "id": 101,
-                    "name": "Rock Classics",
-                    "description": "The best rock songs from the 70s and 80s",
+                    "name": "canciones de rock",
+                    "description": "mis canciones de rock favoritas",
                     "songs": [
                         1,
                         3,
@@ -33,8 +52,8 @@
             "duration": 354,
             "genre": "Rock",
             "release_date": "1975-10-31",
-            "url": "https://example.com/bohemian_rhapsody.mp3",
-            "photo": "https://example.com/bohemian_rhapsody.jpg"
+            "url": "https://s21.aconvert.com/convert/p3r68-cdx67/04ca8-p9l1r.mp3",
+            "photo": "https://m.media-amazon.com/images/I/61VWSXTDFfL._UF1000,1000_QL80_.jpg"
         },
         {
             "id": 2,
@@ -43,8 +62,8 @@
             "duration": 183,
             "genre": "Pop",
             "release_date": "1971-10-11",
-            "url": "https://example.com/imagine.mp3",
-            "photo": "https://example.com/imagine.jpg"
+            "url": "https://s5.aconvert.com/convert/p3r68-cdx67/wu1no-g5ins.mp3",
+            "photo": "https://elcantarano.com/wp-content/uploads/2021/07/Peace-Imagine-Lennon.jpg"
         }
     ],
     "artists": [
@@ -52,13 +71,13 @@
             "id": 1,
             "name": "Queen",
             "genre": "Rock",
-            "profile_image": "https://example.com/queen_profile.jpg"
+            "profile_image": "https://m.media-amazon.com/images/M/MV5BMjA3OTc4NWUtMzYxMC00MGUyLTg4MTctYTc4MjA0NjNkYTgxXkEyXkFqcGc@._V1_.jpg"
         },
         {
             "id": 2,
             "name": "John Lennon",
             "genre": "Pop",
-            "profile_image": "https://example.com/john_lennon.jpg"
+            "profile_image": "https://i.scdn.co/image/ab67616d00001e0299581550ef9746ca582bb3cc"
         }
     ]
 }
