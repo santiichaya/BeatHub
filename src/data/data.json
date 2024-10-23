@@ -4,44 +4,29 @@
             "id": 0,
             "username": "admin",
             "email": "admin@admin.com",
-            "password": "123456",
-            "playlists": [
-                {
-                    "id": 1,
-                    "name": "Rock Classics",
-                    "description": "The best rock songs from the 70s and 80s",
-                    "songs": [
-                        1,
-                        3,
-                        5,
-                        7
-                    ]
-                }
-            ]
+            "password": "123456"
         },
         {
             "id": 1,
             "username": "musicLover123",
             "email": "mailto:musiclover@example.com",
             "password": "hashed_password_here",
-            "playlists": [
-                {
-                    "id": 101,
-                    "name": "canciones de rock",
-                    "description": "mis canciones de rock favoritas",
-                    "songs": [
-                        1,
-                        3,
-                        5,
-                        7
-                    ]
-                }
-            ],
-            "favorite_songs": [
-                2,
-                4,
-                6
-            ]
+            "favorite_song": [1]
+        },
+        {
+            "id": 2,
+            "username": "Jaimito",
+            "email": "jaimito.music@music.com",
+            "password": "hashed_password_here",
+            "favorite_song": [2]
+        }
+    ],
+    "playlists": [
+        {
+            "id": 1,
+            "name": "Variety",
+            "url": "https://www.subexpuesta.com/img/content/fundamentos-foto-abstracta_1.webp",
+            "songs": [1,2,3,4]
         }
     ],
     "songs": [
@@ -52,7 +37,7 @@
             "duration": 354,
             "genre": "Rock",
             "release_date": "1975-10-31",
-            "url": "https://s21.aconvert.com/convert/p3r68-cdx67/04ca8-p9l1r.mp3",
+            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298563110839390251/bohemian_rhapsody.mp3?ex=671a04a3&is=6718b323&hm=e275ddf8aae49ea437c2a1f57a85595b9cbd0369117d3f6bcf72eb48039b61b4&3",
             "photo": "https://m.media-amazon.com/images/I/61VWSXTDFfL._UF1000,1000_QL80_.jpg"
         },
         {
@@ -64,20 +49,48 @@
             "release_date": "1971-10-11",
             "url": "https://s5.aconvert.com/convert/p3r68-cdx67/wu1no-g5ins.mp3",
             "photo": "https://elcantarano.com/wp-content/uploads/2021/07/Peace-Imagine-Lennon.jpg"
+        },
+        {
+            "id": 3,
+            "title": "California Gurls",
+            "artist_id": 3,
+            "duration": 234,
+            "genre": "Pop funk",
+            "release_date": "2010-05-11",
+            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298667659403071518/California_Gurls.mp3?ex=671a6602&is=67191482&hm=b52252444fb1402618123ead079bb8d0959a0b6645eff52052c4e6a6a9636291&",
+            "photo": "https://i.scdn.co/image/ab67616d00001e02d5f3739fca04299590fffe59"
+        },
+        {
+            "id": 4,
+            "title": "Robbery",
+            "artist_id": 4,
+            "duration": 240,
+            "genre": "Hip-hop",
+            "release_date": "2019-02-14",
+            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298667850558341262/Robbery.mp3?ex=671a662f&is=671914af&hm=fbe08ed9c20a5e1c1099b2687fec8b9d40e670c46b8cc9e924b59000fe8b6da7&",
+            "photo": "https://cdn.discordapp.com/attachments/1296811936771735635/1298694144608174201/juice_wrld.jpeg?ex=671a7eac&is=67192d2c&hm=fdee1ed6255a029005c902a13d47c24c870d6719a24c8466742ecf7d615bc12d&"
         }
     ],
     "artists": [
         {
             "id": 1,
             "name": "Queen",
-            "genre": "Rock",
             "profile_image": "https://m.media-amazon.com/images/M/MV5BMjA3OTc4NWUtMzYxMC00MGUyLTg4MTctYTc4MjA0NjNkYTgxXkEyXkFqcGc@._V1_.jpg"
         },
         {
             "id": 2,
             "name": "John Lennon",
-            "genre": "Pop",
             "profile_image": "https://i.scdn.co/image/ab67616d00001e0299581550ef9746ca582bb3cc"
+        },
+        {
+            "id": 3,
+            "name": "Katy Perry",
+            "profile_image": "https://i.scdn.co/image/ab67616d00001e02d5f3739fca04299590fffe59"
+        },
+        {
+            "id": 4,
+            "name": "Juice WRLD",
+            "profile_image": "https://cdn.discordapp.com/attachments/1296811936771735635/1298694144608174201/juice_wrld.jpeg?ex=671a7eac&is=67192d2c&hm=fdee1ed6255a029005c902a13d47c24c870d6719a24c8466742ecf7d615bc12d&"
         }
     ]
 }

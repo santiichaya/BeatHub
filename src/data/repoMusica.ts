@@ -4,7 +4,6 @@ import data from './data.json';
 export interface Artist {
     id: number;
     name: string;
-    genre: string;
     profile_image: string;
 }
 
@@ -59,4 +58,8 @@ export function getSongById(id: number): Song | undefined {
 export function getPlaylistById(userId: number, playlistId: number): Playlist | undefined {
     const user = getUserById(userId);
     return user?.playlists.find(playlist => playlist.id === playlistId);
+}
+
+export function getArtistById(id: number): Artist | undefined {
+    return data.artists.find(artist => artist.id === id);
 }

@@ -1,11 +1,11 @@
 
-import './App.css'
+import './style/App.css'
+import UserPage from './pages/UserPage.tsx'
 
 function App() {
 
   return (
-    <>
-    </>
+    <UserPage/>
   )
 }
 
