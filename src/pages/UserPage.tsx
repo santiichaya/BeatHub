@@ -1,14 +1,15 @@
 import PlayButton from "../components/PlayButton";
 import '../style/UserPage.css';
-import { getArtistById, getUserById } from '../data/repoMusica'; 
+        import { getArtistById, getUserById } from '../data/repoMusica'; 
 
 function UserPage() {
-    let user = getUserById(2);
-    let artist1 = getArtistById(1);
+    let user = getUserById(3);
+    let artist1 = getArtistById(14);
     let artist2 = getArtistById(2);
     let artist3 = getArtistById(3);
     let artist4 = getArtistById(4);
-    let artist5 = getArtistById(5);
+    let artist5 = getArtistById(1);
+    let artist6 = getArtistById(11);
 
     return (
         <>
@@ -19,7 +20,7 @@ function UserPage() {
             <div className="user">
                 <img className="user-img" src="src/assets/profilePicture.jpg" alt="Foto de Perfil" />
                 <span className="user-name">{user ? user.username : 'Usuario no encontrado'}</span>
-                <PlayButton songId={4} />
+                <PlayButton songId={14} />
             </div>
 
             <span className="favorite-artists">Artistas favoritos más escuchados (Último mes)</span>
@@ -43,6 +44,10 @@ function UserPage() {
                 <div className="artist">
                     <img className="artist-img" src={artist5 ? artist5.profile_image : ''} alt={artist5 ? artist5.name : 'Artista no encontrado'} />
                     <span className="artist-name">{artist5 ? artist5.name : 'Artista no encontrado'}</span>
+                </div>
+                <div className="artist">
+                    <img className="artist-img" src={artist6 ? artist6.profile_image : ''} alt={artist6 ? artist6.name : 'Artista no encontrado'} />
+                    <span className="artist-name">{artist6 ? artist6.name : 'Artista no encontrado'}</span>
                 </div>
             </div>
         </>

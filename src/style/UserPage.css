@@ -60,29 +60,30 @@
 }
 
 .artists-section {
-    margin-top: 1rem;
-    border-radius: 1.5rem;
-    /* border: dotted 5px rgb(255, 255, 255);*/
-    background-color: rgb(46, 46, 46);
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    /* Evita que los elementos se muevan a otra fila */
+    overflow: hidden;
+    /* Oculta los elementos que no caben en la pantalla */
     padding: 2rem;
     position: absolute;
     top: 35rem;
     left: 3rem;
     right: 3rem;
-    flex-direction: row;
-    gap: 4.5rem;
-
+    gap: 1rem;
+    border-radius: 1.5rem;
+    background-color: rgb(46, 46, 46);
 }
 
-
 .artist {
+    flex: 1 0 auto;
+    /* Mantiene el tamaño de los elementos */
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin: 0 0.5rem;
+    /* Agrega un pequeño margen entre los artistas */
 }
 
 .artist-img {
@@ -90,7 +91,7 @@
     width: 9.375rem;
     border-radius: 50%;
     transition: filter 0.3s ease;
-    border: solid white 2px;
+    border: solid white 3px;
 }
 
 .artist-img:hover {
