@@ -6,7 +6,7 @@ type PlayButtonProps = {
 function PlayButton({ onPlay, estado}: PlayButtonProps) {
   return (
     <div className="playbutton-container">
-      <button onClick={onPlay} className="playbutton-button">          
+       <button onClick={onPlay} className="playbutton-button">          
           <svg className="playbutton-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
     {estado ? (
       <>
