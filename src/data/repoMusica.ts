@@ -30,8 +30,7 @@ export interface User {
     username: string;
     email: string;
     password: string;
-    playlists: Playlist[];
-    favorite_songs: number[];  // Array de IDs de canciones
+    favorite_songs: number;  // Array de IDs de canciones
 }
 
 // Funciones para obtener datos
