@@ -1,57 +1,43 @@
 import '../style/UserPage.css';
-        import { getArtistById, getUserById } from '../data/repoMusica'; 
+import { getUserById } from '../data/repoMusica'; 
 import { Song } from "../components/Song";
+import { Artist } from '../components/Artist';
+import data from '../data/data.json';
+
+export interface Artist {
+    id: number;
+    name: string;
+    profile_image: string;
+}
 
 function UserPage() {
-    let user = getUserById(3);
-    let artist1 = getArtistById(14);
-    let artist2 = getArtistById(2);
-    let artist3 = getArtistById(3);
-    let artist4 = getArtistById(4);
-    let artist5 = getArtistById(1);
-    let artist6 = getArtistById(11);
+    const user = getUserById(3);
+    const artistasPreferidos=[14,4,2,3,1,11];
+    const artistas=data.artists;
 
+    console.log(artistas);
+    console.log(artistasPreferidos);
     return (
         <>
             <div className="logo">
                 <img className="logo-img" src="src/assets/onlyLogo.png" alt="logo" />
                 <span className="logo-name">beathub</span>
-            </div>    
+            </div>
             <div className="user">
                 <img className="user-img" src="src/assets/profilePicture.jpg" alt="Foto de Perfil" />
                 <span className="user-name">{user ? user.username : 'Usuario no encontrado'}</span>
-                <Song id={14} showOnlyPlayButton={true} /> 
+                <Song id={3} showOnlyPlayButton={true} /> 
             </div>
 
             <span className="favorite-artists">Artistas favoritos más escuchados (Último mes)</span>
             <div className="artists-section">
-                <div className="artist">
-                    <img className="artist-img" src={artist1 ? artist1.profile_image : ''} alt={artist1 ? artist1.name : 'Artista no encontrado'} />
-                    <span className="artist-name">{artist1 ? artist1.name : 'Artista no encontrado'}</span>
-                </div>
-                <div className="artist">
-                    <img className="artist-img" src={artist2 ? artist2.profile_image : ''} alt={artist2 ? artist2.name : 'Artista no encontrado'} />
-                    <span className="artist-name">{artist2 ? artist2.name : 'Artista no encontrado'}</span>
-                </div>
-                <div className="artist">
-                    <img className="artist-img" src={artist3 ? artist3.profile_image : ''} alt={artist3 ? artist3.name : 'Artista no encontrado'} />
-                    <span className="artist-name">{artist3 ? artist3.name : 'Artista no encontrado'}</span>
-                </div>
-                <div className="artist">
-                    <img className="artist-img" src={artist4 ? artist4.profile_image : ''} alt={artist4 ? artist4.name : 'Artista no encontrado'} />
-                    <span className="artist-name">{artist4 ? artist4.name : 'Artista no encontrado'}</span>
-                </div>
-                <div className="artist">
-                    <img className="artist-img" src={artist5 ? artist5.profile_image : ''} alt={artist5 ? artist5.name : 'Artista no encontrado'} />
-                    <span className="artist-name">{artist5 ? artist5.name : 'Artista no encontrado'}</span>
-                </div>
-                <div className="artist">
-                    <img className="artist-img" src={artist6 ? artist6.profile_image : ''} alt={artist6 ? artist6.name : 'Artista no encontrado'} />
-                    <span className="artist-name">{artist6 ? artist6.name : 'Artista no encontrado'}</span>
-                </div>
+            {artistasPreferidos.map((v)=>(
+                v==artistas[v-1].id? <Artist key={artistas[v-1].id} id={artistas[v-1].id}/>:null
+            ))}
             </div>
         </>
     );
 }
+
 
 export default UserPage;
