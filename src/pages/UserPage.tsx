@@ -1,6 +1,6 @@
-import PlayButton from "../components/PlayButton";
 import '../style/UserPage.css';
         import { getArtistById, getUserById } from '../data/repoMusica'; 
+import { Song } from "../components/Song";
 
 function UserPage() {
     let user = getUserById(3);
@@ -20,7 +20,7 @@ function UserPage() {
             <div className="user">
                 <img className="user-img" src="src/assets/profilePicture.jpg" alt="Foto de Perfil" />
                 <span className="user-name">{user ? user.username : 'Usuario no encontrado'}</span>
-                <PlayButton songId={14} />
+                <Song id={14} showOnlyPlayButton={true} /> 
             </div>
 
             <span className="favorite-artists">Artistas favoritos más escuchados (Último mes)</span>
