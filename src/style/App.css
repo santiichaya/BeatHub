@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'Kanit';
 }
 
 @font-face {
@@ -126,4 +127,19 @@
 
 .playbutton-button:focus {
   outline: none;
+}
+
+.song-container.only-play-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  /* Sin fondo */
+  padding: 0;
+  margin: 0;
+}
+
+.song-container.only-play-button .song-header {
+  display: none;
+  /* Oculta todo el header */
 }
