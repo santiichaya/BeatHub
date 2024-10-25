@@ -4,8 +4,9 @@ import PlayButton from "./PlayButton";
 
 type SongsProps={
     id:number;
+    showOnlyPlayButton?:boolean
 }
-export function Song({id}:SongsProps){
+export function Song({id,showOnlyPlayButton=false}:SongsProps){
     const [isPlaying, setIsPlaying] = useState(false); // El estado para saber cuando está sonando y cuando no.
     const audioRef = useRef<HTMLAudioElement>(null); //El audiRef sirve para poder manipular un elemento del DOM de tipo audio. Es un estado mutable.
     const song=getSongById(id); //Obtengo la canción a partir del id
@@ -26,7 +27,7 @@ export function Song({id}:SongsProps){
     return(
         <>
             <article className="song-container">
-                <header className="song-header">
+                <header className="song-header" hidden={showOnlyPlayButton}>
                     <img src={song?.photo}/>
                     <div className="song-info">
                         <h3>{song?.title}</h3>
