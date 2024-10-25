@@ -57,19 +57,22 @@
   background-color: #247BA0;
   border-radius: 10px;
   overflow: hidden;
+  margin: 10px;
 }
 
 .song-header {
   width: 80%;
   display: flex;
-  justify-content: start;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .song-info {
   height: 100%;
+<<<<<<< Updated upstream
   width: 100%;
+=======
+  width: 80%;
+>>>>>>> Stashed changes
   display: flex;
   align-items: center;
   padding-left: 1rem;
@@ -81,7 +84,11 @@
 }
 
 .song-title {
+<<<<<<< Updated upstream
   width: 35%;
+=======
+  width: 50%;
+>>>>>>> Stashed changes
   text-align: start;
 }
 
@@ -122,7 +129,11 @@
   height: 70%;
   width: 70%;
   padding: 0;
+<<<<<<< Updated upstream
   border: none;
+=======
+  border-radius: 100%;
+>>>>>>> Stashed changes
 }
 
 .playbutton-svg {
@@ -133,6 +144,7 @@
 
 .playbutton-button:focus {
   outline: none;
+<<<<<<< Updated upstream
 }
 
 .song-container-only-play-button {
@@ -182,4 +194,6 @@
   width: 4rem;
   border-radius: 100%;
   background-color: #247BA0;
+=======
+>>>>>>> Stashed changes
 }
