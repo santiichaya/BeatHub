@@ -122,7 +122,7 @@
   height: 70%;
   width: 70%;
   padding: 0;
-  border: none;
+  border-radius: 100%;
 }
 
 .playbutton-svg {
