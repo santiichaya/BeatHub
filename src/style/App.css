@@ -129,17 +129,37 @@
   outline: none;
 }
 
-.song-container.only-play-button {
+.song-container-only-play-button {
+  height:4rem;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   background-color: transparent;
   /* Sin fondo */
   padding: 0;
   margin: 0;
 }
 
-.song-container.only-play-button .song-header {
+.song-container-only-play-button .song-header {
   display: none;
   /* Oculta todo el header */
+}
+
+.song-footer-only-play-button {
+  margin-right: 2rem;
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.song-footer-only-play-button .playbutton-container .playbutton-svg {
+  width: inherit;
+  height: inherit;
+}
+
+.song-footer-only-play-button .playbutton-container .playbutton-button {
+  height: 5rem;
+  width: 5rem;
 }
