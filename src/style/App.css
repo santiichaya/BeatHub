@@ -137,7 +137,7 @@
 }
 
 .song-container-only-play-button {
-  height:4rem;
+  height: 4rem;
   display: inline-flex;
   align-items: center;
   justify-content: end;
@@ -159,6 +159,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.song-footer-only-play-button .playbutton-container {
+  height: 3rem;
+  /* Asegúrate de que sea suficiente para mostrar el SVG */
+  width: 3rem;
+  /* Asegúrate de que sea suficiente para mostrar el SVG */
+  display: flex;
+  align-items: center;
+  /* Centra el contenido verticalmente */
+  justify-content: center;
+  /* Centra el contenido horizontalmente */
 }
 
 .song-footer-only-play-button .playbutton-container .playbutton-svg {
