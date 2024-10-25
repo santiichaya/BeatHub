@@ -3,6 +3,35 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'Kanit';
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
 }
 
 .logo {
@@ -11,32 +40,145 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
 .card {
   padding: 2em;
 }
 
 .read-the-docs {
-  color: #888;
+  color: #888888;
+}
+
+.song-container {
+  height: 3rem;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #247BA0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.song-header {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.song-info {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.song-container img {
+  height: 3rem;
+  border-radius: inherit;
+}
+
+.song-title {
+  width: 35%;
+  text-align: start;
+}
+
+.song-artistname {
+  font-size: 1rem;
+  font-weight: lighter;
+  width: 40%;
+  text-align: start;
+}
+
+.song-genre {
+  width: 25%;
+  text-align: start;
+  font-size: 0.75rem;
+  font-weight: lighter;
+}
+
+.song-footer {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.song-duration {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+.playbutton-container {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.playbutton-button {
+  height: 70%;
+  width: 70%;
+  padding: 0;
+  border-radius: 100%;
+}
+
+.playbutton-svg {
+  height: 100%;
+  width: 100%;
+  fill: #ffffff;
+}
+
+.playbutton-button:focus {
+  outline: none;
+}
+
+.song-container-only-play-button {
+  height: 4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: end;
+  background-color: transparent;
+  /* Sin fondo */
+  padding: 0;
+  margin: 0;
+}
+
+.song-container-only-play-button .song-header {
+  display: none;
+  /* Oculta todo el header */
+}
+
+.song-footer-only-play-button {
+  margin-right: 2rem;
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.song-footer-only-play-button .playbutton-container {
+  height: 6rem;
+  /* Asegúrate de que sea suficiente para mostrar el SVG */
+  width: 6rem;
+  /* Asegúrate de que sea suficiente para mostrar el SVG */
+  display: flex;
+  align-items: center;
+  /* Centra el contenido verticalmente */
+  justify-content: center;
+  /* Centra el contenido horizontalmente */
+}
+
+.song-footer-only-play-button .playbutton-container .playbutton-svg {
+  width: inherit;
+  height: inherit;
+}
+
+.song-footer-only-play-button .playbutton-container .playbutton-button {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  background-color: #247BA0;
 }
