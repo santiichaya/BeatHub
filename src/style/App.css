@@ -122,7 +122,6 @@
   height: 70%;
   width: 70%;
   padding: 0;
-  border-radius: 100%;
   border: none;
 }
 
@@ -162,9 +161,9 @@
 }
 
 .song-footer-only-play-button .playbutton-container {
-  height: 3rem;
+  height: 6rem;
   /* Asegúrate de que sea suficiente para mostrar el SVG */
-  width: 3rem;
+  width: 6rem;
   /* Asegúrate de que sea suficiente para mostrar el SVG */
   display: flex;
   align-items: center;
@@ -179,6 +178,8 @@
 }
 
 .song-footer-only-play-button .playbutton-container .playbutton-button {
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  background-color: #247BA0;
 }
