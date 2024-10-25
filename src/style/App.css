@@ -69,11 +69,9 @@
 
 .song-info {
   height: 100%;
-  width: 50%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
   padding-left: 1rem;
 }
 
@@ -82,12 +80,21 @@
   border-radius: inherit;
 }
 
+.song-title {
+  width: 35%;
+  text-align: start;
+}
+
 .song-artistname {
   font-size: 1rem;
   font-weight: lighter;
+  width: 40%;
+  text-align: start;
 }
 
 .song-genre {
+  width: 25%;
+  text-align: start;
   font-size: 0.75rem;
   font-weight: lighter;
 }
