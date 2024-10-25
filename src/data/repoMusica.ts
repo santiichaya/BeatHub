@@ -4,7 +4,6 @@ import data from './data.json';
 export interface Artist {
     id: number;
     name: string;
-    genre: string;
     profile_image: string;
 }
 
@@ -22,7 +21,7 @@ export interface Song {
 export interface Playlist {
     id: number;
     name: string;
-    description: string;
+    url: string; // Corregido: Añadido url
     songs: number[];  // Array de IDs de canciones
 }
 
@@ -31,8 +30,7 @@ export interface User {
     username: string;
     email: string;
     password: string;
-    playlists: Playlist[];
-    favorite_songs: number[];  // Array de IDs de canciones
+    favorite_song: number[];  // Array de IDs de canciones
 }
 
 // Funciones para obtener datos
@@ -56,7 +54,7 @@ export function getSongById(id: number): Song | undefined {
     return data.songs.find(song => song.id === id);
 }
 
-export function getPlaylistById(userId: number, playlistId: number): Playlist | undefined {
-    const user = getUserById(userId);
-    return user?.playlists.find(playlist => playlist.id === playlistId);
+// Función para obtener una playlist por su ID
+export function getPlaylistById(playlistId: number): Playlist | undefined {
+    return data.playlists.find(playlist => playlist.id === playlistId);
 }
