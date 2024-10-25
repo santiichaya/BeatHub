@@ -1,13 +1,11 @@
 import './style/App.css'
-import { Song } from './components/Song'
-import UserPage from './pages/UserPage'
+/* import UserPage from './pages/UserPage.tsx' */
+import {Song} from './components/Song.tsx'
 
-function App() 
-{
+function App() {
+
   return (
-    <>
-      <UserPage/>
-    </>
+    <Song id={10}/>
   )
 }
 

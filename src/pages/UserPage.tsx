@@ -12,7 +12,7 @@ export interface Artist {
 
 function UserPage() {
     const user = getUserById(3);
-    const artistasPreferidos=[14,9,8,7,5,4];
+    const artistasPreferidos=[14,4,2,3,1,11];
     const artistas=data.artists;
 
     console.log(artistas);
@@ -22,11 +22,11 @@ function UserPage() {
             <div className="logo">
                 <img className="logo-img" src="src/assets/onlyLogo.png" alt="logo" />
                 <span className="logo-name">beathub</span>
-            </div>    
+            </div>
             <div className="user">
                 <img className="user-img" src="src/assets/profilePicture.jpg" alt="Foto de Perfil" />
                 <span className="user-name">{user ? user.username : 'Usuario no encontrado'}</span>
-                <Song id={14} showOnlyPlayButton={true} /> 
+                <Song id={3} showOnlyPlayButton={true} /> 
             </div>
 
             <span className="favorite-artists">Artistas favoritos más escuchados (Último mes)</span>

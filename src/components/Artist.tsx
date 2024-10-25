@@ -1,6 +1,5 @@
 import '../style/App.css';
 import { getArtistById } from '../data/repoMusica'; 
-
 type ArtistProps={
     id:number;
 }

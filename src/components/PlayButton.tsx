@@ -6,15 +6,23 @@ type PlayButtonProps = {
 function PlayButton({ onPlay, estado}: PlayButtonProps) {
   return (
     <div className="playbutton-container">
-      <button onClick={onPlay}>
-        <svg className="playbutton-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-          <path d="M8 1c3.9 0 7 3.1 7 7s-3.1 7-7 7-7-3.1-7-7 3.1-7 7-7zM8 0c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8v0z"></path>
-          {estado ? (
-            <path d="M6 5h2v6H6zM8 5h2v6H8z"></path> // Icono de pausa
-          ) : (
-            <path d="M6 4v8l6-4z"></path> // Icono de reproducción
-          )}
-        </svg>
+      <button onClick={onPlay} className="playbutton-button">          
+          <svg className="playbutton-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    {estado ? (
+      <>
+        <rect x="5" y="4" width="2.5" height="8" rx="1"></rect> 
+        <rect x="8.5" y="4" width="2.5" height="8" rx="1"></rect> 
+        </>
+    ) : (
+
+    <g transform="translate(1.5, 0.5)">
+        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 300 300">
+  <path fill-rule="nonzero" d="M200.08 157.84c13.75-8.88 13.7-18.77 0-26.63l-110.27-76.77c-11.19-7.04-22.89-2.9-22.58 11.72l.44 154.47c.96 15.86 10.02 20.21 23.37 12.87l109.04-75.66z"/>
+</svg>
+    </g>
+
+    )}
+</svg>
       </button>
     </div>
   );
