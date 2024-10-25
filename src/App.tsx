@@ -1,12 +1,12 @@
 
-import './style/App.css'
-import UserPage from './pages/UserPage.tsx'
+  import './style/App.css'
+  import UserPage from './pages/UserPage.tsx'
 
-function App() {
+  function App() {
 
-  return (
-    <UserPage/>
-  )
-}
+    return (
+      <UserPage/>
+    )
+  }
 
-export default App
+  export default App

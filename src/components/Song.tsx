@@ -26,7 +26,8 @@ export function Song({id,showOnlyPlayButton=false}:SongsProps){
       };
     return(
         <>
-            <article className={`song-container-${showOnlyPlayButton ? 'only-play-button' : ''}`}>
+            <article className={`song-container ${showOnlyPlayButton ? 'song-container-only-play-button' : ''}`}>
+
         {!showOnlyPlayButton && (
           <>
             <header className="song-header">
@@ -44,7 +45,7 @@ export function Song({id,showOnlyPlayButton=false}:SongsProps){
             <audio ref={audioRef} src={song?.url} />
         </footer>
         </>
-        )} {(
+        )} { showOnlyPlayButton &&(
           <footer className="song-footer-only-play-button">
             <PlayButton onPlay={toggleAudio} estado={isPlaying} />
             <audio ref={audioRef} src={song?.url} />
