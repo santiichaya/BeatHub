@@ -1,4 +1,3 @@
-
 import './style/App.css'
 import { Song } from './components/Song.tsx'
 

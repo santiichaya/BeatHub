@@ -30,7 +30,8 @@ export interface User {
     username: string;
     email: string;
     password: string;
-    favorite_song: number;
+    playlists: Playlist[];
+    favorite_songs: number[];  // Array de IDs de canciones
 }
 
 // Funciones para obtener datos
@@ -60,5 +61,5 @@ export function getPlaylistById(userId: number, playlistId: number): Playlist | 
 }
 
 export function getArtistById(id: number): Artist | undefined {
-    return data.artists.find(artist => artist.id===id);
+    return data.artists.find(artist => artist.id === id);
 }

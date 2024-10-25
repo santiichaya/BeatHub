@@ -3,6 +3,35 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'Kanit';
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
 }
 
 .logo {
@@ -20,7 +49,7 @@
   color: #888888;
 }
 
-.song-container{
+.song-container {
   height: 3rem;
   width: 80vw;
   display: flex;
@@ -40,39 +69,32 @@
 
 .song-info {
   height: 100%;
-  width: 100%;
+  width: 50%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
   padding-left: 1rem;
 }
 
-.song-container img{
+.song-container img {
   height: 3rem;
   border-radius: inherit;
-}
-
-.song-title {
-  width: 35%;
-  text-align: start;
 }
 
 .song-artistname {
   font-size: 1rem;
   font-weight: lighter;
-  width: 40%;
-  text-align: start;
 }
 
 .song-genre {
-  width: 25%;
-  text-align: start;
   font-size: 0.75rem;
   font-weight: lighter;
 }
 
 .song-footer {
   width: 20%;
-  display: flex; 
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
@@ -105,4 +127,39 @@
 
 .playbutton-button:focus {
   outline: none;
+}
+
+.song-container-only-play-button {
+  height:4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: end;
+  background-color: transparent;
+  /* Sin fondo */
+  padding: 0;
+  margin: 0;
+}
+
+.song-container-only-play-button .song-header {
+  display: none;
+  /* Oculta todo el header */
+}
+
+.song-footer-only-play-button {
+  margin-right: 2rem;
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.song-footer-only-play-button .playbutton-container .playbutton-svg {
+  width: inherit;
+  height: inherit;
+}
+
+.song-footer-only-play-button .playbutton-container .playbutton-button {
+  height: 5rem;
+  width: 5rem;
 }
