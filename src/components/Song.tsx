@@ -11,6 +11,9 @@ export function Song({id,showOnlyPlayButton=false}:SongsProps){
     const audioRef = useRef<HTMLAudioElement>(null); //El audiRef sirve para poder manipular un elemento del DOM de tipo audio. Es un estado mutable.
     const song=getSongById(id); //Obtengo la canción a partir del id
     const artista=typeof(song?.artist_id)!='undefined'?getArtistById(song.artist_id):null; //Obtengo el artista a partir de la propiedad id_artist que tiene la canción
+    const minutes = (Math.trunc(song!.duration / 60));
+    const seconds = `0${(Math.trunc(song!.duration % 60))}`;
+    const duracion = `${minutes}: ${seconds.slice(-2)}`;
     //Función para poder tratar cuando me hagan click en el componente PlayButton
     const toggleAudio = () => {
         if (audioRef.current) {
@@ -33,14 +36,13 @@ export function Song({id,showOnlyPlayButton=false}:SongsProps){
             <header className="song-header">
                 <img src={song?.photo} />
                 <div className="song-info">
-                    <h3>{song?.title}</h3>
-                    <p>{song?.genre}</p>
-                    <p>{song?.duration}</p>
-                    <p>{artista?.name}</p>
-                    <p>{song?.release_date}</p>
+                    <h3 className="song-title">{song?.title}</h3>
+                    <p className="song-artistname">{artista?.name}</p>
+                    <p className="song-genre">"{song?.genre}"</p>
                 </div>
             </header>
             <footer className="song-footer">
+            <p className="song-duration">{duracion}</p>
             <PlayButton onPlay={toggleAudio} estado={isPlaying} />
             <audio ref={audioRef} src={song?.url} />
         </footer>
