@@ -30,7 +30,7 @@ export interface User {
     username: string;
     email: string;
     password: string;
-    favorite_songs: number;
+    favorite_song: number;
 }
 
 // Funciones para obtener datos
