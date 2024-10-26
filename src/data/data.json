@@ -4,49 +4,50 @@
             "id": 0,
             "username": "admin",
             "email": "admin@admin.com",
-            "password": "123456"
+            "password": "123456",
+            "favorite_song": 1
         },
         {
             "id": 1,
             "username": "musicLover123",
             "email": "mailto:musiclover@example.com",
             "password": "123456",
-            "favorite_song": [1]
+            "favorite_song": 3
         },
         {
             "id": 2,
             "username": "Jaimito",
             "email": "jaimito.music@music.com",
             "password": "123456",
-            "favorite_song": [2]
+            "favorite_song": 7
         },
         {
             "id": 3,
             "username": "Melen",
             "email": "melen@music.com",
             "password": "123456",
-            "favorite_song": [4]
+            "favorite_song": 4
         },
         {
             "id": 4,
             "username": "Mario",
             "email": "mario@music.com",
             "password": "123456",
-            "favorite_song": [3]
+            "favorite_song": 2
         },
         {
             "id": 5,
             "username": "Gonzalez",
             "email": "gonzalez@music.com",
             "password": "123456",
-            "favorite_song": [1]
+            "favorite_song": 10
         },
         {
             "id": 6,
             "username": "Santi",
             "email": "santi@music.com",
             "password": "123345",
-            "favorite_song": [4]
+            "favorite_song": 12
         }
     ],
     "playlists": [
@@ -161,7 +162,7 @@
             "duration": 227,
             "genre": "Bachata",
             "release_date": "2023-01-09",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298706410913271890/Myke_Towers_-_LA_FALDA_Video_Oficial.mp3?ex=671a8a19&is=67193899&hm=de56f371acd29496d258f38140f1b292c6122098d511945d7e04ff18a3b0d027&",
+            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1299079598197182495/Myke_Towers_-_LA_FALDA_Video_Oficial_1.mp3?ex=671be5a7&is=671a9427&hm=11adac79494c39c415abfbbb29ebedc492b726887d2f65dbee0c77f275878f85&",
             "photo": "https://i1.sndcdn.com/artworks-r0TxDn1vZJbLEO3p-ROydVw-t500x500.jpg"
         },
         {

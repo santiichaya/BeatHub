@@ -21,7 +21,7 @@ export interface Song {
 export interface Playlist {
     id: number;
     name: string;
-    url:string;
+    url: string; // Corregido: Añadido url
     songs: number[];  // Array de IDs de canciones
 }
 
@@ -30,12 +30,11 @@ export interface User {
     username: string;
     email: string;
     password: string;
-    playlists: Playlist[];
-    favorite_songs: number[];  // Array de IDs de canciones
+    favorite_song: number;
 }
 
 // Funciones para obtener datos
-export function getArtists(artist_id: number | undefined): Artist[] {
+export function getArtists(): Artist[] {
     return data.artists;
 }
 
@@ -55,11 +54,11 @@ export function getSongById(id: number): Song | undefined {
     return data.songs.find(song => song.id === id);
 }
 
+// Función para obtener una playlist por su ID
 export function getPlaylistById(playlistId: number): Playlist | undefined {
-    return data?.playlists.find(playlist => playlist.id === playlistId);
+    return data.playlists.find(playlist => playlist.id === playlistId);
 }
 
 export function getArtistById(id: number): Artist | undefined {
     return data.artists.find(artist => artist.id === id);
 }
-

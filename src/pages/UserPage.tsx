@@ -14,6 +14,7 @@ function UserPage() {
     const user = getUserById(3);
     const artistasPreferidos=[14,4,2,3,1,11];
     const artistas=data.artists;
+
     return (
         <>
             <div className="logo">
