@@ -1,9 +1,14 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
   padding: 2rem;
   text-align: center;
   font-family: 'Kanit';
+}
+
+.main-container {
+  margin-top: 8rem;
 }
 
 @font-face {
@@ -181,4 +186,139 @@
   width: 4rem;
   border-radius: 100%;
   background-color: #247BA0;
+}
+
+.header-main-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  background-color: #5c5c5c;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a.homecont {
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+}
+
+.homebutton-container {
+  height: 4rem;
+  width: 4rem;
+}
+
+.homebutton-button {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: #247BA0;
+}
+
+.homebutton-svg {
+  height: 4rem;
+  width: 4rem;
+  fill: #000000;
+}
+
+.homebutton-button:focus {
+  outline: none;
+}
+
+nav a.searchcont {
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+}
+
+.searchbutton-container {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbutton-button {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: #247BA0;
+}
+
+.searchbutton-svg {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-content: center;
+  fill: #000000;
+}
+
+.searchbutton-button:focus {
+  outline: none;
+}
+.artists-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  /* Evita que los elementos se muevan a otra fila */
+  overflow: hidden;
+  /* Oculta los elementos que no caben en la pantalla */
+  padding: 2rem;
+  position: absolute;
+  top: 35rem;
+  left: 3rem;
+  right: 3rem;
+  gap: 1rem;
+  border-radius: 1.5rem;
+  background-color: rgb(46, 46, 46);
+}
+
+.artist {
+  flex: 1 0 auto;
+  /* Mantiene el tamaño de los elementos */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.5rem;
+  /* Agrega un pequeño margen entre los artistas */
+}
+
+.artist-img {
+  height: 9.375rem;
+  width: 9.375rem;
+  border-radius: 50%;
+  transition: filter 0.3s ease;
+  border: solid white 3px;
+}
+
+.artist-img:hover {
+  filter: brightness(0.5);
+}
+
+.artist-name {
+  color: white;
+  font-size: 2rem;
+  margin-top: 0.5rem;
 }
