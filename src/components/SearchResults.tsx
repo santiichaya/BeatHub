@@ -1,38 +1,41 @@
 import React from 'react';
-import { Artist, Song } from '../data/repoMusica';
+import { resultartist, resultsong } from '../data/repoMusica';
+import {Song} from './Song';
+import {Artist} from './Artist';
 
 interface SearchResultsProps {
-    songs: Song[];
-    artists: Artist[];
+    songs: resultsong[];
+    artists: resultartist[];
 }
 
 const SearchResults: React.FC<SearchResultsProps> = ({ songs, artists }) => {
 
     return (
-        <div>
+        <div className='search-result'> 
+        <div className='search-result-song'>
             <h4>Canciones:</h4>
             {songs.length > 0 ? (
-                songs.map(song => (
-                    <div key={song.id}>
-                        <img src={song.photo} alt={song.title} />
-                        <p>{song.title}</p>
+                songs.map(resultsong => (
+                    <div key={resultsong.id}>
+                        <Song id={resultsong.id}/>
                     </div>
                 ))
             ) : (
                 <p>No se ha encontrado la canción</p>
             )}
-
+            </div>
+            <div className='search-result-artist'>
             <h4>Artistas:</h4>
             {artists.length > 0 ? (
-                artists.map(artist => (
-                    <div key={artist.id}>
-                        <img src={artist.profile_image} alt={artist.name} style={{width:'100px'}}/>
-                        <p>{artist.name}</p>
+                artists.map(resultartist => (
+                    <div key={resultartist.id}>
+                        <Artist id={resultartist.id}/>
                     </div>
                 ))
             ) : (
                 <p>No se ha encontrado el artista</p>
             )}
+            </div>
         </div>
     );
 };

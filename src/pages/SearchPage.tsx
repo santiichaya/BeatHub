@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import SearchBar from '../Components/searchBar';
-import SearchResults from '../Components/searchResults';
+import SearchBar from '../components/SearchBar';
+import SearchResults from '../components/SearchResults';
 import { useSearch } from '../hooks/useSearch';
 
 const SearchPage: React.FC = () => {
@@ -8,7 +8,7 @@ const SearchPage: React.FC = () => {
     const { songs, artists } = useSearch(query);
 
     return (
-        <div>
+        <div className='main-container'>
             <SearchBar onSearch={setQuery} />
             <SearchResults songs={songs} artists={artists} />
         </div>
