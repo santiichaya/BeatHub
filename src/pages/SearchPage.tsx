@@ -8,7 +8,7 @@ const SearchPage: React.FC = () => {
     const { songs, artists } = useSearch(query);
 
     return (
-        <div>
+        <div className='main-container'>
             <SearchBar onSearch={setQuery} />
             <SearchResults songs={songs} artists={artists} />
         </div>
