@@ -10,7 +10,7 @@ export function ContainerPlayList({ ids }: ContainerPlayListProp) {
 
     return (
         <>
-            <div className="artists-section">
+            <div className="playlists-section">
                 {ids.map((v) => (
                     v == playlists[v - 1].id ? <Playlist key={playlists[v - 1].id} id={playlists[v - 1].id}/> : null
                 ))}

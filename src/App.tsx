@@ -2,8 +2,8 @@ import './style/App.css'
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import SearchPage from './pages/SearchPage';
+import Header from './components/Header';
+import UserPage from './pages/UserPage';
 import { Display } from './pages/Display';
 import { ContainerPlayList } from './components/ContainerPlayList';
 
@@ -11,6 +11,9 @@ function App() {
 
   return (
     <>
+    <Header/>
+    {/* <UserPage/> */}
+    
        <Router>
             <Routes>
                 <Route path="/" element={<ContainerPlayList ids={[1,1,1]} />} />

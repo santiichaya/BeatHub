@@ -37,7 +37,6 @@ export function Display() {
                     v == canciones[v - 1].id ? <tr><td colSpan={4}><Song key={canciones[v - 1].id} id={canciones[v - 1].id} /></td></tr> : null
                 ))}
             </table>
-            <a href="/">Inicio</a>
         </>
     )
 }

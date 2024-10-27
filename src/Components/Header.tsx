@@ -8,20 +8,28 @@ import SearchButton from './SearchButton.tsx';
 function header() {
     return (
         <>
-        <Router>
-            <div className='header-main-container'>
-                <header className='header-container'>
-                    <Link to="/" className='homecont'><HomeButton /></Link><br />
-                    <Link to="/search" className='searchcont'><SearchButton /></Link>
-                </header>
-            </div>
+            <Router>
+                <div className='header-main-container'>
+                    <div className='header-separator'>
+                        <div className="logo">
+                            <img className="logo-img" src="src/assets/onlyLogo.png" alt="logo" />
+                            <span className="logo-name">beathub</span>
+                        </div>
+                    </div>
 
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/search" element={<SearchPage />} />
-            </Routes>
-        </Router>
-    </>
+                    <header className='header-container'>
+                        <Link to="/" className='searchcont'><HomeButton/></Link>
+                        {/* <a href='/'><HomeButton /></a> */}
+                        <Link to="/search" className='searchcont'><SearchButton /></Link>
+                    </header>
+                </div>
+
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/search" element={<SearchPage />} />
+                </Routes>
+            </Router>
+        </>
     )
 }
 

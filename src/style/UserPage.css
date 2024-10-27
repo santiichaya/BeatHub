@@ -2,21 +2,6 @@
     font-family: 'Kanit';
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
-    left: 0;
-    right: 4rem;
-    top: 1rem;
-}
-
-.logo-img {
-    height: 3.75rem;
-    width: 3.75rem;
-}
-
 .user {
     display: flex;
     align-items: center;

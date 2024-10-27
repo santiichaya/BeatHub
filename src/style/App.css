@@ -39,11 +39,21 @@
   font-style: italic;
 }
 
+.header-separator {
+  display: flex;
+  justify-content: flex-start;
+  width: 70%;
+}
+
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-img {
+  height: 3.75rem;
+  width: 3.75rem;
 }
 
 .card {

@@ -17,10 +17,6 @@ function UserPage() {
 
     return (
         <>
-            <div className="logo">
-                <img className="logo-img" src="src/assets/onlyLogo.png" alt="logo" />
-                <span className="logo-name">beathub</span>
-            </div>
             <div className="user">
                 <img className="user-img" src="src/assets/profilePicture.jpg" alt="Foto de Perfil" />
                 <span className="user-name">{user ? user.username : 'Usuario no encontrado'}</span>
