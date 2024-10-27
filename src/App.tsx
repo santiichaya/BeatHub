@@ -11,12 +11,23 @@ function App() {
 
   return (
     <>
-       <Router>
+       {/* <Router>
             <Routes>
                 <Route path="/" element={<ContainerPlayList ids={[1,1,1]} />} />
                 <Route path="/Playlist/:id" element={<Display/>} />
             </Routes>
-        </Router>
+        </Router> */}
+        <Router>
+      <nav>
+        <Link to="/">Inicio</Link>
+        <Link to="/search">Buscar Canciones</Link>
+      </nav>
+      <Routes>
+      <Route path="/" element={<ContainerPlayList ids={[1,1,1]} />} />
+      <Route path="/Playlist/:id" element={<Display/>} />
+      <Route path="/search" element={<SearchPage />} />
+      </Routes>
+      </Router> 
     </>
   )
 }

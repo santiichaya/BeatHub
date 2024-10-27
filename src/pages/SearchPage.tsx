@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import SearchBar from '../components/SearchBar';
-import SearchResults from '../components/SearchResults';
+import SearchResults from '../Components/SearchResults';
+import SearchBar from '../Components/SearchBar';
 import { useSearch } from '../hooks/useSearch';
 
 const SearchPage: React.FC = () => {
