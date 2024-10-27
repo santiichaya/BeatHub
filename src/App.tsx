@@ -1,10 +1,7 @@
 import './style/App.css'
-import UserPage from './pages/UserPage.tsx'
-/* import {Song} from './components/Song.tsx' */
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import SearchPage from './pages/SearchPage';
+import SearchPage from './Pages/SearchPage';
+import UserPage from './Pages/UserPage';
 
 function App() {
 
@@ -15,9 +12,9 @@ function App() {
         <Link to="/">Inicio</Link>
         <Link to="/search">Buscar Canciones</Link>
       </nav>
-
+  
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<UserPage />} />
         <Route path="/search" element={<SearchPage />} />
       </Routes>
     </Router>
