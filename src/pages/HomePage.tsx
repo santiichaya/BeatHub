@@ -1,9 +1,10 @@
 import React from 'react';
+import { ContainerPlayList } from '../components/ContainerPlayList';
 
 const HomePage: React.FC = () => {
   return (
     <div className='main-container'>
-      <h1>Bienvenido a la página de inicio</h1>
+      <ContainerPlayList ids={[1,1,1,]}/>
     </div>
   );
 };

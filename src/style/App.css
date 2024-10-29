@@ -373,3 +373,7 @@ nav a.searchcont {
   width: 4%;
   fill: #ffffff;
 }
+
+.display-container {
+  margin-top: 8rem;
+}

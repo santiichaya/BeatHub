@@ -18,7 +18,7 @@ export function Display() {
     const minutos = `0${Math.trunc(tiempo_total % 3600)}`;
     const duracionPlayList = horas != 0 ? `${horas} h : ${minutos.slice(-2)} min` : `${minutos.slice(-2)} min`;
     return (
-        <>
+        <div className="display-container">
             <div className="displayPlaylist-header">
                 <img src={playlist?.url} />
                 <div>
@@ -37,6 +37,6 @@ export function Display() {
                     v == canciones[v - 1].id ? <tr><td colSpan={4}><Song key={canciones[v - 1].id} id={canciones[v - 1].id} /></td></tr> : null
                 ))}
             </table>
-        </>
+        </div>
     )
 }
