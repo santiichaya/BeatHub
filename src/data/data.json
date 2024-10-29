@@ -59,9 +59,9 @@
         },
         {
             "id": 2,
-            "name": "Variety",
+            "name": "Para Workout",
             "url": "https://www.subexpuesta.com/img/content/fundamentos-foto-abstracta_1.webp",
-            "songs": [1,2,3,4,5,6,7,8]
+            "songs": [1,2,3,4,5,6,7,8,14]
         }
     ],
     "songs": [
@@ -203,7 +203,7 @@
             "genre": "Rap",
             "release_date": "2023-07-15",
             "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298713870357233757/COSCO_Y_LOPEX_ft_ARDO440_-_MISCO_videoclip.mp3?ex=671a910b&is=67193f8b&hm=30788cd4b1aee9a4024481c273c7d951104d88558328f2e918d64a00e66589df&",
-            "photo": "https://m.media-amazon.com/images/I/512F0xCsrWL._UXNaN_FMjpg_QL85_.jpg"
+            "photo": "https://cdns-images.dzcdn.net/images/cover/02877cf050f251a22fe715546ddc8ae2/1900x1900-000000-80-0-0.jpg"
         }
         ,
         {

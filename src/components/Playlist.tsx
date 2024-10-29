@@ -8,16 +8,16 @@ export function Playlist({ id }: PlayListProp) {
     const playlist = getPlaylistById(id);
 
     return (
-        <>
-            <Link to={`/Playlist/${id}`}>
+        <div className="playlist-container">
+            <Link to={`/Playlist/${id}`} className="playlist-url">
                 <article>
-                    <img src={playlist?.url} />
+                    <img className="playlist-img" src={playlist?.url} />
                     <div>
-                        <h3>{playlist?.name}</h3>
+                        <h3 className="playlist-title">{playlist?.name}</h3>
                     </div>
                 </article>
             </Link>
-        </>
+        </div>
     )
 
 }

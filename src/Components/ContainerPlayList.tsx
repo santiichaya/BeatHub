@@ -9,13 +9,14 @@ export function ContainerPlayList({ ids }: ContainerPlayListProp) {
     const playlists = data.playlists;
 
     return (
-        <>
-            <div className="playlists-section">
+        <div  className="playlists-section">
+        <h1 className="playlist-presentation">Playlists</h1>
+            <div className="playlist">
                 {ids.map((v) => (
                     v == playlists[v - 1].id ? <Playlist key={playlists[v - 1].id} id={playlists[v - 1].id}/> : null
                 ))}
             </div>
-        </>
+        </div>
     )
 
 }

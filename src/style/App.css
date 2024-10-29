@@ -8,7 +8,7 @@
 }
 
 .main-container {
-  margin-top: 8rem;
+  margin-top: 15rem;
 }
 
 @font-face {
@@ -376,4 +376,42 @@ nav a.searchcont {
 
 .display-container {
   margin-top: 8rem;
+}
+
+.playlist-container {
+  display: flex;
+  height: 8rem;
+  width: auto;
+  padding: 2rem;
+}
+
+.playlists-section {
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 8rem;
+  background-color: #247BA0;
+}
+
+.playlist-img {
+  height: 8rem;
+  width: auto;
+}
+
+.playlist-presentation {
+  display: flex;
+  align-items: start;
+  margin: 0;
+}
+
+.playlist {
+  height: 15rem;
+  display: flex;
+}
+
+.playlist-title {
+  color: #ffffff;
+}
+
+.playlist-url {
+  text-decoration: none;
 }
