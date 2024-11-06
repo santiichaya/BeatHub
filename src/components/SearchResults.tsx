@@ -21,11 +21,12 @@ const SearchResults: React.FC<SearchResultsProps> = ({ songs, artists }) => {
                     </div>
                 ))
             ) : (
-                <p>No se ha encontrado la canción</p>
+                <p className='result-not-found'>No se ha encontrado la canción</p>
             )}
             </div>
-            <div className='search-result-artist'>
+            <div className='search-result-artists-main'>
             <h4>Artistas:</h4>
+            <div className='search-result-artists'>
             {artists.length > 0 ? (
                 artists.map(resultartist => (
                     <div key={resultartist.id}>
@@ -33,8 +34,9 @@ const SearchResults: React.FC<SearchResultsProps> = ({ songs, artists }) => {
                     </div>
                 ))
             ) : (
-                <p>No se ha encontrado el artista</p>
+                <p className='result-not-found'>No se ha encontrado el artista</p>
             )}
+            </div>
             </div>
         </div>
     );

@@ -8,14 +8,16 @@ function Header() {
         <div className='header-main-container'>
             <div className='header-separator'>
                 <div className="logo">
-                    <img className="logo-img" src="src/assets/onlyLogo.png" alt="logo" />
-                    <span className="logo-name">beathub</span>
+                    <Link to="/UserPage" className='user-button'>
+                        <img className="logo-img" src="src/assets/onlyLogo.png" alt="logo" />
+                        <span className="logo-name">beathub</span>
+                    </Link>
                 </div>
             </div>
 
             <header className='header-container'>
-                <Link to="/" className='searchcont'><HomeButton /></Link>
-                <Link to="/search" className='searchcont'><SearchButton /></Link>
+                <Link to="/"><HomeButton /></Link>
+                <Link to="/search"><SearchButton /></Link>
             </header>
         </div>
     );

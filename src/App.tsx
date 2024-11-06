@@ -2,11 +2,11 @@ import './style/App.css'
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import HomePage from './pages/HomePage';
 import SearchPage from './pages/SearchPage';
 import { Display } from './pages/Display';
 import { ContainerPlayList } from './components/ContainerPlayList';
 import Header from './components/Header';
+import UserPage from './pages/UserPage';
 
 function App() {
 
@@ -17,6 +17,7 @@ function App() {
           <Header />
         </nav>
         <Routes>
+          <Route path="/UserPage" element={<UserPage/>} />
           <Route path="/" element={<ContainerPlayList ids={[1, 2, 1, 1, 2, 1, 1, 1, 1]} />} />
           <Route path="/Playlist/:id" element={<Display />} />
           <Route path="/search" element={<SearchPage />} />
