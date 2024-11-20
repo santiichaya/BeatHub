@@ -53,13 +53,13 @@
     "playlists": [
         {
             "id": 1,
-            "name": "Variety",
+            "name": "VARIETY",
             "url": "https://www.subexpuesta.com/img/content/fundamentos-foto-abstracta_1.webp",
             "songs": [1,2,3,4]
         },
         {
             "id": 2,
-            "name": "Para Workout",
+            "name": "FOR WORKOUT",
             "url": "https://www.subexpuesta.com/img/content/fundamentos-foto-abstracta_1.webp",
             "songs": [1,2,3,4,5,6,7,8,14]
         }
@@ -72,7 +72,7 @@
             "duration": 354,
             "genre": "Rock",
             "release_date": "1975-10-31",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298563110839390251/bohemian_rhapsody.mp3?ex=671a04a3&is=6718b323&hm=e275ddf8aae49ea437c2a1f57a85595b9cbd0369117d3f6bcf72eb48039b61b4&3",
+            "url": "/src/songs/bohemian_rhapsody.mp3",
             "photo": "https://m.media-amazon.com/images/I/61VWSXTDFfL._UF1000,1000_QL80_.jpg"
         },
         {
@@ -82,7 +82,7 @@
             "duration": 183,
             "genre": "Pop",
             "release_date": "1971-10-11",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298702585884311592/IMAGINE._Ultimate_Mix_2020_-_John_Lennon__The_Plastic_Ono_Band_with_the_Flux_Fiddlers_HD.mp3?ex=671a8689&is=67193509&hm=dcab4a1a7a994297865e4b05df0cef3d1582f4322373f2671983bca3a117874a&",
+            "url": "/src/songs/imagine.mp3",
             "photo": "https://elcantarano.com/wp-content/uploads/2021/07/Peace-Imagine-Lennon.jpg"
         },
         {
@@ -92,7 +92,7 @@
             "duration": 234,
             "genre": "Pop funk",
             "release_date": "2010-05-11",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298667659403071518/California_Gurls.mp3?ex=671a6602&is=67191482&hm=b52252444fb1402618123ead079bb8d0959a0b6645eff52052c4e6a6a9636291&",
+            "url": "/src/songs/california_gurls.mp3",
             "photo": "https://i.scdn.co/image/ab67616d00001e02d5f3739fca04299590fffe59"
         },
         {
@@ -102,7 +102,7 @@
             "duration": 240,
             "genre": "Hip-hop",
             "release_date": "2019-02-14",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298667850558341262/Robbery.mp3?ex=671a662f&is=671914af&hm=fbe08ed9c20a5e1c1099b2687fec8b9d40e670c46b8cc9e924b59000fe8b6da7&",
+            "url": "/src/songs/robbery.mp3",
             "photo": "https://cdn.discordapp.com/attachments/1296811936771735635/1298694144608174201/juice_wrld.jpeg?ex=671a7eac&is=67192d2c&hm=fdee1ed6255a029005c902a13d47c24c870d6719a24c8466742ecf7d615bc12d&"
         },
         {
@@ -112,7 +112,7 @@
             "duration": 187,
             "genre": "Trap",
             "release_date": "2024-04-26",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298698207949357166/GONZY_-_XCLUSIVO_Official_Video.mp3?ex=671a8275&is=671930f5&hm=80f5300b7a57ff129a82357fb54cade184f71aeb7baa3aeaa3453a1bd8835f9f&",
+            "url": "/src/songs/xclusivo.mp3",
             "photo": "https://cdn.discordapp.com/attachments/1296811936771735635/1298694144608174201/juice_wrld.jpeg?ex=671a7eac&is=67192d2c&hm=fdee1ed6255a029005c902a13d47c24c870d6719a24c8466742ecf7d615bc12d&"
         },
         {
@@ -122,7 +122,7 @@
             "duration": 173,
             "genre": "Hip-hop",
             "release_date": "2024-25-11",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298701647475642438/DIEGOTE_-_TU_SILUETA_Video_Oficial.mp3?ex=671a85a9&is=67193429&hm=b0e19942d227bba999cf940d9d5977671d127c98b5727a523311d1922dfd3d4c&",
+            "url": "/src/songs/tu_silueta.mp3",
             "photo": "https://i1.sndcdn.com/artworks-YedWcRXdJDTe6IbP-KEoeLg-t500x500.jpg"
         },
         {
@@ -132,7 +132,7 @@
             "duration": 220,
             "genre": "Urban",
             "release_date": "2024-05-02",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298703119219167304/Omar_Montes__JC_Reyes_-_GOTERAS.mp3?ex=671a8708&is=67193588&hm=cf2d5fcbbd1cfba708ed959162e5e309e7abfdc7e702f9f89c575f7c42eb8bf7&",
+            "url": "/src/songs/goteras.mp3",
             "photo": "https://i1.sndcdn.com/artworks-4TXa5gfUqGtaiGfj-ZIlXzA-t500x500.jpg"
         },
         {
@@ -142,7 +142,7 @@
             "duration": 169,
             "genre": "Urban",
             "release_date": "2023-04-18",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298704016729182218/KAROL_G_-_Amargura_Visualizer.mp3?ex=671a87de&is=6719365e&hm=8c9d0a55e053302215cea9ce940d67cd6d9f6dccb6e1788fd75b2325c261dfa8&",
+            "url": "/src/songs/amargura.mp3",
             "photo": "https://i1.sndcdn.com/artworks-gddrYsH3o4boDC1s-CX03XQ-t500x500.jpg"
         },
         {
@@ -152,7 +152,7 @@
             "duration": 156,
             "genre": "Pop",
             "release_date": "2024-07-13",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298704892730409021/Kapo_-_OHNANA_Official_Video.mp3?ex=671a88af&is=6719372f&hm=389bd151f767d0a1f062bf2a030fa54d6368a56f5bbed25a88c228ca2280d182&",
+            "url": "/src/songs/ohnana.mp3",
             "photo": "https://i1.sndcdn.com/artworks-gfFF1MCVSim2f71s-4VQ1Pw-t240x240.jpg"
         },
         {
@@ -162,7 +162,7 @@
             "duration": 227,
             "genre": "Bachata",
             "release_date": "2023-01-09",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1299079598197182495/Myke_Towers_-_LA_FALDA_Video_Oficial_1.mp3?ex=671be5a7&is=671a9427&hm=11adac79494c39c415abfbbb29ebedc492b726887d2f65dbee0c77f275878f85&",
+            "url": "/src/songs/la_falda.mp3",
             "photo": "https://i1.sndcdn.com/artworks-r0TxDn1vZJbLEO3p-ROydVw-t500x500.jpg"
         },
         {
@@ -172,7 +172,7 @@
             "duration": 157,
             "genre": "Pop",
             "release_date": "2019-05-17",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298707100368765019/Lil_Nas_X_-_Old_Town_Road_Official_Video_ft._Billy_Ray_Cyrus.mp3?ex=671a8abd&is=6719393d&hm=f6f952b46e29a342126f8be27c2eb2aebe83d20ecebd12e1255faa6061a04d64&",
+            "url": "/src/songs/old_town_road.mp3",
             "photo": "https://media.gq.com/photos/5cdeef0e1f8a4e271cddab8d/1:1/w_689,h_689,c_limit/Old-Town-Road-Video-GQ-2019-051719.jpg"
         },
         {
@@ -182,7 +182,7 @@
             "duration": 285,
             "genre": "Pop",
             "release_date": "2016-08-27",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298707874335428658/CANT_STOP_THE_FEELING_from_DreamWorks_Animations_TROLLS_Official_Video.mp3?ex=671a8b76&is=671939f6&hm=0ee9c9184d32b38904765c8f24f6eb2e1f01e87986f5e01420eae5c5331f86d4&",
+            "url": "/src/songs/cant_stop_the_feeling.mp3",
             "photo": "https://upload.wikimedia.org/wikipedia/en/2/21/Justin_Timberlake_-_Can%27t_Stop_the_Feeling.png"
         },
         {
@@ -192,7 +192,7 @@
             "duration": 220,
             "genre": "Alternative",
             "release_date": "2013-05-19",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298709269264339055/noname.mp3?ex=671a8cc2&is=67193b42&hm=e11cde7f9089a92059c26e4d5ccab96cfdec9663e7bbe61e891f44d5d5173ae6&",
+            "url": "/src/songs/best_day_of_my_life.mp3",
             "photo": "https://i.scdn.co/image/ab67616d0000b273924cda0a9a7e3c8c4a6178aa"
         },
         {
@@ -202,7 +202,7 @@
             "duration": 279,
             "genre": "Rap",
             "release_date": "2023-07-15",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298713870357233757/COSCO_Y_LOPEX_ft_ARDO440_-_MISCO_videoclip.mp3?ex=671a910b&is=67193f8b&hm=30788cd4b1aee9a4024481c273c7d951104d88558328f2e918d64a00e66589df&",
+            "url": "/src/songs/misco.mp3",
             "photo": "https://cdns-images.dzcdn.net/images/cover/02877cf050f251a22fe715546ddc8ae2/1900x1900-000000-80-0-0.jpg"
         }
         ,
@@ -213,7 +213,7 @@
             "duration": 167,
             "genre": "Rap",
             "release_date": "2024-02-28",
-            "url": "https://cdn.discordapp.com/attachments/1297888507490205737/1298713884349436015/Cosco_y_Lopex_ft_Ardo440_-_Rozando_la_sierra_Videoclip.mp3?ex=671a910e&is=67193f8e&hm=8e093dedab570cbc08912d38faaf427f95b0a6a2a6b71ab3820e65c61193ea6e&",
+            "url": "/src/songs/rozando_la_sierra.mp3",
             "photo": "https://cdns-images.dzcdn.net/images/cover/02877cf050f251a22fe715546ddc8ae2/1900x1900-000000-80-0-0.jpg"
         }    ],
     "artists": [

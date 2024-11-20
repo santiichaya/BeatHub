@@ -1,7 +1,7 @@
 import './style/App.css'
 
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SearchPage from './pages/SearchPage';
 import { Display } from './pages/Display';
 import { ContainerPlayList } from './components/ContainerPlayList';

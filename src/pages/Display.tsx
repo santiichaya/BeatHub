@@ -19,22 +19,23 @@ export function Display() {
     const duracionPlayList = horas != 0 ? `${horas} h : ${minutos.slice(-2)} min` : `${minutos.slice(-2)} min`;
     return (
         <div className="display-container">
+            <div className="display-container-background" style={{ backgroundImage: `url(${playlist?.url})` }}></div>
             <div className="displayPlaylist-header">
-                <img src={playlist?.url} />
-                <div>
-                    <h3>{playlist?.name}</h3>
-                    <p>{duracionPlayList}</p>
-                </div>
+                <h3>{playlist?.name}</h3>
+                <p>{duracionPlayList}</p>
             </div>
-            <table>
-                <tr>
-                    <td>Titulo</td>
-                    <td>Artista</td>
-                    <td>Género</td>
-                    <td>Duración</td>
+            <table className="displayPlaylist-content">
+                <tr className="display-table-header">
+                    <td className="vacio"></td>
+                    <div className="display-table-header-width">
+                    <td className="display-titulo">Titulo</td>
+                    <td className="display-artista">Artista</td>
+                    <td className="display-genero">Género</td>
+                    </div>
+                    <td className="display-duracion">Duración</td>
                 </tr>
                 {playlist?.songs.map((v: number) => (
-                    v == canciones[v - 1].id ? <tr><td colSpan={4}><Song key={canciones[v - 1].id} id={canciones[v - 1].id} /></td></tr> : null
+                    v == canciones[v - 1].id ? <tr><td colSpan={5}><Song key={canciones[v - 1].id} id={canciones[v - 1].id} /></td></tr> : null
                 ))}
             </table>
         </div>
