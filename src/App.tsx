@@ -1,30 +1,28 @@
-import './style/App.css'
-
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SearchPage from './pages/SearchPage';
-import { Display } from './pages/Display';
-import { ContainerPlayList } from './components/ContainerPlayList';
-import Header from './components/Header';
-import UserPage from './pages/UserPage';
+import "./style/App.css";
+/* import {Song} from './components/Song.tsx' */
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import SearchPage from "./pages/SearchPage";
+import UserPage from "./pages/UserPage.tsx";
 
 function App() {
-
   return (
     <>
       <Router>
         <nav>
-          <Header />
+          <Link to="/">Inicio</Link>
+          <Link to="/search">Buscar Canciones</Link>
+          <Link to="/userpage">Perfil</Link>
         </nav>
+
         <Routes>
-          <Route path="/UserPage" element={<UserPage/>} />
-          <Route path="/" element={<ContainerPlayList ids={[1,2]} />} />
-          <Route path="/Playlist/:id" element={<Display />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/search" element={<SearchPage />} />
+          <Route path="/userpage" element={<UserPage />} />
         </Routes>
       </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
