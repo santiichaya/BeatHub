@@ -16,7 +16,7 @@ const SearchResults: React.FC<SearchResultsProps> = ({ songs, artists }) => {
             <h4>Canciones:</h4>
             {songs.length > 0 ? (
                 songs.map(resultsong => (
-                    <div key={resultsong.id}>
+                    <div key={resultsong.id} className='search-result-song-div'>
                         <Song id={resultsong.id}/>
                     </div>
                 ))

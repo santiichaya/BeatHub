@@ -89,6 +89,14 @@
   margin: 10px;
 }
 
+.search-result-song-div {
+  width: 100%;
+}
+
+.search-result-song {
+  width: 100%;
+}
+
 .song-header {
   width: 80%;
   display: flex;
@@ -448,6 +456,7 @@ nav a.searchcont {
 .playlist-img {
   height: 8rem;
   width: auto;
+  border-radius: 10px;
 }
 
 .playlist-presentation {
@@ -472,35 +481,59 @@ nav a.searchcont {
 
 .display-table-header {
   margin: 10px;
-  width: 0 auto;
 }
 
-.display-table-header-width {
-  width: 100%;
+.display-table-header-info {
+  padding-left: 1rem;
+  padding-right: 0.8rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.display-titulo {
+.display-table-header-vacio {
+  width: 3.7rem;
+}
+
+.display-table-header-div1 {
+  width: 80%;
+  display: flex;
+}
+
+.display-table-header-div2 {
+  width: 20%;
+  display: flex;
+}
+
+.display-table-header-stuff {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.display-table-header-title {
   width: 35%;
   text-align: start;
 }
 
-.vacio {
-  width: 4.3rem;
-  height: auto;
-  padding: 0;
-}
-
-.display-artista {
-  text-align: start;
+.display-table-header-artist {
   width: 40%;
+  text-align: start;
 }
 
-.display-genero {
+.display-table-header-genre {
+  width: 25%;
   text-align: start;
-  width: 16%;
 }
 
-.display-duracion {
-  width: 20%;
+.display-table-header-duration {
+  padding-left: 10%;
+  width: 100%;
   text-align: start;
+}
+
+
+@media  (max-width: 500px){
+  *{
+    font-size: small;
+  }
 }

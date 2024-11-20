@@ -25,18 +25,29 @@ export function Display() {
                 <p>{duracionPlayList}</p>
             </div>
             <table className="displayPlaylist-content">
-                <tr className="display-table-header">
-                    <td className="vacio"></td>
-                    <div className="display-table-header-width">
-                    <td className="display-titulo">Titulo</td>
-                    <td className="display-artista">Artista</td>
-                    <td className="display-genero">Género</td>
-                    </div>
-                    <td className="display-duracion">Duración</td>
-                </tr>
-                {playlist?.songs.map((v: number) => (
-                    v == canciones[v - 1].id ? <tr><td colSpan={5}><Song key={canciones[v - 1].id} id={canciones[v - 1].id} /></td></tr> : null
-                ))}
+                <thead className="display-table-head">
+                    <tr className="display-table-header">
+                        <td className="display-table-header-info">
+                            <div className="display-table-header-div1">
+                            <span className="display-table-header-vacio"></span>
+                                <div className="display-table-header-stuff">
+                                    
+                                    <span className="display-table-header-title">Titulo</span>
+                                    <span className="display-table-header-artist">Artista</span>
+                                    <span className="display-table-header-genre">Género</span>
+                                </div>
+                            </div>
+                            <div className="display-table-header-div2">
+                                    <span className="display-table-header-duration">Duración</span>
+                                </div>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody className="display-table-body">
+                    {playlist?.songs.map((v: number) => (
+                        <tr key={canciones[v - 1].id}><td><Song id={canciones[v - 1].id} /></td></tr>
+                    ))}
+                </tbody>
             </table>
         </div>
     )

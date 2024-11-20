@@ -18,7 +18,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/UserPage" element={<UserPage/>} />
-          <Route path="/" element={<ContainerPlayList ids={[1, 2, 1, 1, 2, 1, 1, 1, 1]} />} />
+          <Route path="/" element={<ContainerPlayList ids={[1,2]} />} />
           <Route path="/Playlist/:id" element={<Display />} />
           <Route path="/search" element={<SearchPage />} />
         </Routes>
