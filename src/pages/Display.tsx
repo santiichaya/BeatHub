@@ -15,7 +15,8 @@ export function Display() {
         tiempo_total = tiempo_total + cancion!.duration;
     })
     const horas = Math.trunc(tiempo_total / 3600);
-    const minutos = `0${Math.trunc(tiempo_total % 3600)}`;
+    const minutos = `0${Math.trunc((tiempo_total % 3600) / 60)}`;
+
     const duracionPlayList = horas != 0 ? `${horas} h : ${minutos.slice(-2)} min` : `${minutos.slice(-2)} min`;
     return (
         <div className="display-container">

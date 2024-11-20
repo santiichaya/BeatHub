@@ -1,28 +1,26 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import HomePage from '../pages/HomePage.tsx';
-import SearchPage from '../pages/SearchPage.tsx';
+import { Link } from 'react-router-dom';
 import HomeButton from './HomeButton.tsx';
-import SearchButton from '../components/SearchButton.tsx';
+import SearchButton from './SearchButton.tsx';
 
-function header() {
+function Header() {
     return (
-        <>
-        <Router>
-            <div className='header-main-container'>
-                <header className='header-container'>
-                    <Link to="/" className='homecont'><HomeButton /></Link><br />
-                    <Link to="/search" className='searchcont'><SearchButton /></Link>
-                </header>
+        <div className='header-main-container'>
+            <div className='header-separator'>
+                <div className="logo">
+                    <Link to="/UserPage" className='user-button'>
+                        <img className="logo-img" src="src/assets/onlyLogo.png" alt="logo" />
+                        <span className="logo-name">beathub</span>
+                    </Link>
+                </div>
             </div>
 
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/search" element={<SearchPage />} />
-            </Routes>
-        </Router>
-    </>
-    )
+            <header className='header-container'>
+                <Link to="/"><HomeButton /></Link>
+                <Link to="/search"><SearchButton /></Link>
+            </header>
+        </div>
+    );
 }
 
-export default header;
+export default Header;

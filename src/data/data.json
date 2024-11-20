@@ -1,291 +1,846 @@
+{   
+    "users": [
+        {
+            "id": 0,
+            "username": "admin",
+            "email": "admin@admin.com",
+            "password": "123456",
+            "favorite_song": 1
+        },
+        {
+            "id": 1,
+            "username": "musicLover123",
+            "email": "mailto:musiclover@example.com",
+            "password": "123456",
+            "favorite_song": 3
+        },
+        {
+            "id": 2,
+            "username": "Jaimito",
+            "email": "jaimito.music@music.com",
+            "password": "123456",
+            "favorite_song": 7
+        },
+        {
+            "id": 3,
+            "username": "Melen",
+            "email": "melen@music.com",
+            "password": "123456",
+            "favorite_song": 4
+        },
+        {
+            "id": 4,
+            "username": "Mario",
+            "email": "mario@music.com",
+            "password": "123456",
+            "favorite_song": 2
+        },
+        {
+            "id": 5,
+            "username": "Gonzalez",
+            "email": "gonzalez@music.com",
+            "password": "123456",
+            "favorite_song": 10
+        },
+        {
+            "id": 6,
+            "username": "Santi",
+            "email": "santi@music.com",
+            "password": "123345",
+            "favorite_song": 12
+        }
+    ],
+    "playlists": [
+        {
+            "id": 1,
+            "name": "VARIETY",
+            "url": "https://www.subexpuesta.com/img/content/fundamentos-foto-abstracta_1.webp",
+            "songs": [1, 2, 3, 4]
+        },
 {
-  "users": [
-      {
-          "id": 0,
-          "username": "admin",
-          "email": "admin@admin.com",
-          "password": "123456",
-          "favorite_song": 1
-      },
-      {
-          "id": 1,
-          "username": "musicLover123",
-          "email": "mailto:musiclover@example.com",
-          "password": "123456",
-          "favorite_song": 3
-      },
-      {
-          "id": 2,
-          "username": "Jaimito",
-          "email": "jaimito.music@music.com",
-          "password": "123456",
-          "favorite_song": 7
-      },
-      {
-          "id": 3,
-          "username": "Melen",
-          "email": "melen@music.com",
-          "password": "123456",
-          "favorite_song": 4
-      },
-      {
-          "id": 4,
-          "username": "Mario",
-          "email": "mario@music.com",
-          "password": "123456",
-          "favorite_song": 2
-      },
-      {
-          "id": 5,
-          "username": "Gonzalez",
-          "email": "gonzalez@music.com",
-          "password": "123456",
-          "favorite_song": 10
-      },
-      {
-          "id": 6,
-          "username": "Santi",
-          "email": "santi@music.com",
-          "password": "123345",
-          "favorite_song": 12
-      }
-  ],
-  "playlists": [
-      {
-          "id": 1,
-          "name": "VARIETY",
-          "url": "https://www.subexpuesta.com/img/content/fundamentos-foto-abstracta_1.webp",
-          "songs": [1,2,3,4]
-      },
-      {
-          "id": 2,
-          "name": "FOR WORKOUT",
-          "url": "https://www.subexpuesta.com/img/content/fundamentos-foto-abstracta_1.webp",
-          "songs": [1,2,3,4,5,6,7,8,14]
-      }
-  ],
-  "songs": [
-      {
-          "id": 1,
-          "title": "Bohemian Rhapsody",
-          "artist_id": 1,
-          "duration": 354,
-          "genre": "Rock",
-          "release_date": "1975-10-31",
-          "url": "/src/songs/bohemian_rhapsody.mp3",
-          "photo": "https://m.media-amazon.com/images/I/61VWSXTDFfL._UF1000,1000_QL80_.jpg"
-      },
-      {
-          "id": 2,
-          "title": "Imagine",
-          "artist_id": 2,
-          "duration": 183,
-          "genre": "Pop",
-          "release_date": "1971-10-11",
-          "url": "/src/songs/imagine.mp3",
-          "photo": "https://elcantarano.com/wp-content/uploads/2021/07/Peace-Imagine-Lennon.jpg"
-      },
-      {
-          "id": 3,
-          "title": "California Gurls",
-          "artist_id": 3,
-          "duration": 234,
-          "genre": "Pop funk",
-          "release_date": "2010-05-11",
-          "url": "/src/songs/california_gurls.mp3",
-          "photo": "https://i.scdn.co/image/ab67616d00001e02d5f3739fca04299590fffe59"
-      },
-      {
-          "id": 4,
-          "title": "Robbery",
-          "artist_id": 4,
-          "duration": 240,
-          "genre": "Hip-hop",
-          "release_date": "2019-02-14",
-          "url": "/src/songs/robbery.mp3",
-          "photo": "https://cdn.discordapp.com/attachments/1296811936771735635/1298694144608174201/juice_wrld.jpeg?ex=671a7eac&is=67192d2c&hm=fdee1ed6255a029005c902a13d47c24c870d6719a24c8466742ecf7d615bc12d&"
-      },
-      {
-          "id": 5,
-          "title": "XCLUSIVO",
-          "artist_id": 5,
-          "duration": 187,
-          "genre": "Trap",
-          "release_date": "2024-04-26",
-          "url": "/src/songs/xclusivo.mp3",
-          "photo": "https://cdn.discordapp.com/attachments/1296811936771735635/1298694144608174201/juice_wrld.jpeg?ex=671a7eac&is=67192d2c&hm=fdee1ed6255a029005c902a13d47c24c870d6719a24c8466742ecf7d615bc12d&"
-      },
-      {
-          "id": 6,
-          "title": "TU SILUETA",
-          "artist_id": 6,
-          "duration": 173,
-          "genre": "Hip-hop",
-          "release_date": "2024-25-11",
-          "url": "/src/songs/tu_silueta.mp3",
-          "photo": "https://i1.sndcdn.com/artworks-YedWcRXdJDTe6IbP-KEoeLg-t500x500.jpg"
-      },
-      {
-          "id": 7,
-          "title": "GOTERAS",
-          "artist_id": 7,
-          "duration": 220,
-          "genre": "Urban",
-          "release_date": "2024-05-02",
-          "url": "/src/songs/goteras.mp3",
-          "photo": "https://i1.sndcdn.com/artworks-4TXa5gfUqGtaiGfj-ZIlXzA-t500x500.jpg"
-      },
-      {
-          "id": 8,
-          "title": "AMARGURA",
-          "artist_id": 8,
-          "duration": 169,
-          "genre": "Urban",
-          "release_date": "2023-04-18",
-          "url": "/src/songs/amargura.mp3",
-          "photo": "https://i1.sndcdn.com/artworks-gddrYsH3o4boDC1s-CX03XQ-t500x500.jpg"
-      },
-      {
-          "id": 9,
-          "title": "Ohnana",
-          "artist_id": 9,
-          "duration": 156,
-          "genre": "Pop",
-          "release_date": "2024-07-13",
-          "url": "/src/songs/ohnana.mp3",
-          "photo": "https://i1.sndcdn.com/artworks-gfFF1MCVSim2f71s-4VQ1Pw-t240x240.jpg"
-      },
-      {
-          "id": 10,
-          "title": "LA FALDA",
-          "artist_id": 10,
-          "duration": 227,
-          "genre": "Bachata",
-          "release_date": "2023-01-09",
-          "url": "/src/songs/la_falda.mp3",
-          "photo": "https://i1.sndcdn.com/artworks-r0TxDn1vZJbLEO3p-ROydVw-t500x500.jpg"
-      },
-      {
-          "id": 11,
-          "title": "Old Town Road",
-          "artist_id": 11,
-          "duration": 157,
-          "genre": "Pop",
-          "release_date": "2019-05-17",
-          "url": "/src/songs/old_town_road.mp3",
-          "photo": "https://media.gq.com/photos/5cdeef0e1f8a4e271cddab8d/1:1/w_689,h_689,c_limit/Old-Town-Road-Video-GQ-2019-051719.jpg"
-      },
-      {
-          "id": 12,
-          "title": "Cant Stop The Feeling",
-          "artist_id": 12,
-          "duration": 285,
-          "genre": "Pop",
-          "release_date": "2016-08-27",
-          "url": "/src/songs/cant_stop_the_feeling.mp3",
-          "photo": "https://upload.wikimedia.org/wikipedia/en/2/21/Justin_Timberlake_-_Can%27t_Stop_the_Feeling.png"
-      },
-      {
-          "id": 13,
-          "title": "Best Day of My Life",
-          "artist_id": 13,
-          "duration": 220,
-          "genre": "Alternative",
-          "release_date": "2013-05-19",
-          "url": "/src/songs/best_day_of_my_life.mp3",
-          "photo": "https://i.scdn.co/image/ab67616d0000b273924cda0a9a7e3c8c4a6178aa"
-      },
-      {
-          "id": 14,
-          "title": "MISCO",
-          "artist_id": 14,
-          "duration": 279,
-          "genre": "Rap",
-          "release_date": "2023-07-15",
-          "url": "/src/songs/misco.mp3",
-          "photo": "https://cdns-images.dzcdn.net/images/cover/02877cf050f251a22fe715546ddc8ae2/1900x1900-000000-80-0-0.jpg"
-      }
-      ,
-      {
-          "id": 15,
-          "title": "Rozando la Sierra",
-          "artist_id": 14,
-          "duration": 167,
-          "genre": "Rap",
-          "release_date": "2024-02-28",
-          "url": "/src/songs/rozando_la_sierra.mp3",
-          "photo": "https://cdns-images.dzcdn.net/images/cover/02877cf050f251a22fe715546ddc8ae2/1900x1900-000000-80-0-0.jpg"
-      }    ],
-  "artists": [
-      {
-          "id": 1,
-          "name": "Queen",
-          "profile_image": "https://m.media-amazon.com/images/M/MV5BMjA3OTc4NWUtMzYxMC00MGUyLTg4MTctYTc4MjA0NjNkYTgxXkEyXkFqcGc@._V1_.jpg"
-      },
-      {
-          "id": 2,
-          "name": "John Lennon",
-          "profile_image": "https://i.scdn.co/image/ab67616d00001e0299581550ef9746ca582bb3cc"
-      },
-      {
-          "id": 3,
-          "name": "Katy Perry",
-          "profile_image": "https://i.scdn.co/image/ab67616d00001e02d5f3739fca04299590fffe59"
-      },
-      {
-          "id": 4,
-          "name": "Juice WRLD",
-          "profile_image": "https://cdn.discordapp.com/attachments/1296811936771735635/1298694144608174201/juice_wrld.jpeg?ex=671a7eac&is=67192d2c&hm=fdee1ed6255a029005c902a13d47c24c870d6719a24c8466742ecf7d615bc12d&"
-      },
-      {
-          "id": 5,
-          "name": "Saiko",
-          "profile_image": "https://i.scdn.co/image/ab6761610000e5ebd3ac55d0cfd372835c182d33"
-      },
-      {
-          "id": 6,
-          "name": "Diegote",
-          "profile_image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84627d6a0f9692ab346fa201ba"
-      },
-      {
-          "id": 7,
-          "name": "Omar Montes",
-          "profile_image": "https://i.scdn.co/image/ab67616d00001e02b97f603621a230afd6e578df"
-      },
-      {
-          "id": 8,
-          "name": "Karol G",
-          "profile_image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84763d3d46a4431f6e62451d21"
-      },
-      {
-          "id": 9,
-          "name": "Kapo",
-          "profile_image": "https://i.scdn.co/image/ab6761610000e5ebd21af7619db28f072b7a9f54"
-      },
-      {
-          "id": 10,
-          "name": "Mike Towers",
-          "profile_image": "https://i.scdn.co/image/ab6761610000e5eb8372345609bebaf1e948ef7f"
-      },
-      {
-          "id": 11,
-          "name": "Lil Nas X",
-          "profile_image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8459fe0168e3afd40d8bdc1d96"
-      },
-      {
-          "id": 12,
-          "name": "Justin Timberlake",
-          "profile_image": "https://lite-images-i.scdn.co/image/ab67656300005f1f06634464f280a610568ab4e1"
-      },
-      {
-          "id": 13,
-          "name": "American Authors",
-          "profile_image": "https://i.scdn.co/image/ab6761610000e5eb76fa6126d926bd6302239aba"
-      },
-      {
-          "id": 14,
-          "name": "Cosco y Lopex",
-          "profile_image": "https://yt3.googleusercontent.com/ytc/AIdro_naZaXPEBefxnhcR2XpBnBoqlBqQWpDMqdxAn-kRoZ2KA=s900-c-k-c0x00ffffff-no-rj"
-      }
-  ]
+    "id": 2,
+    "name": "Vibras Internacionales",
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84a02d441ca43b09743267bbfe",
+    "songs": [1, 2, 7, 16, 25]
+},
+{
+    "id": 3,
+    "name": "Energy Boost",
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84124bd0cf5122f4e1aa2a65b7",
+    "songs": [16, 17, 19, 29, 39, 40]
+},
+{
+    "id": 4,
+    "name": "Good Vibes",
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84b1e6b7574c140e8745e28243",
+    "songs": [3, 5, 9, 12, 13, 25]
+},
+{
+    "id": 5,
+    "name": "Urban Nights",
+    "url": "https://i1.sndcdn.com/artworks-VhasNVluVHNXMEX7-9gvSxg-t500x500.jpg",
+    "songs": [4, 6, 7, 8, 10, 11]
+},
+{
+    "id": 6,
+    "name": "Summer Hits",
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da849e3740a7bb6d669005a01626",
+    "songs": [3, 23, 25, 32, 18, 7]
+},
+{
+    "id": 7,
+    "name": "Chill & Relax",
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84cf33878980e0ae7b4b6e5381",
+    "songs": [2, 9, 28, 10, 36, 44]
+},
+{
+    "id": 8,
+    "name": "Dance Party",
+    "url": "https://i1.sndcdn.com/artworks-000478631157-plzl37-t500x500.jpg",
+    "songs": [16, 17, 18, 22, 30, 37]
+},
+{
+    "id": 9,
+    "name": "Romantic Moments",
+    "url": "https://source.boomplaymusic.com/group10/M00/07/24/06222cdafb6b49f79d742c658c083ac6_320_320.jpg",
+    "songs": [35, 41, 42, 43, 34]
+},
+{
+    "id": 10,
+    "name": "Road Trip",
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8480f10991aa98a1dfb85e4ee7",
+    "songs": [27, 19, 18, 16, 13]
 }
+    ],
+    "songs": [
+        {
+            "id": 1,
+            "title": "Bohemian Rhapsody",
+            "artist_id": 1,
+            "duration": 354,
+            "genre": "Rock",
+            "release_date": "1975-10-31",
+            "url": "/src/songs/bohemian_rhapsody.mp3",
+            "photo": "https://m.media-amazon.com/images/I/61VWSXTDFfL._UF1000,1000_QL80_.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Imagine",
+            "artist_id": 2,
+            "duration": 183,
+            "genre": "Pop",
+            "release_date": "1971-10-11",
+            "url": "/src/songs/imagine.mp3",
+            "photo": "https://elcantarano.com/wp-content/uploads/2021/07/Peace-Imagine-Lennon.jpg"
+        },
+        {
+            "id": 3,
+            "title": "California Gurls",
+            "artist_id": 3,
+            "duration": 234,
+            "genre": "Pop funk",
+            "release_date": "2010-05-11",
+            "url": "/src/songs/california_gurls.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e02d5f3739fca04299590fffe59"
+        },
+        {
+            "id": 4,
+            "title": "Robbery",
+            "artist_id": 4,
+            "duration": 240,
+            "genre": "Hip-hop",
+            "release_date": "2019-02-14",
+            "url": "/src/songs/robbery.mp3",
+            "photo": "https://upload.wikimedia.org/wikipedia/en/0/08/Juicy_Robbery.png"
+        },
+        {
+            "id": 5,
+            "title": "XCLUSIVO",
+            "artist_id": 5,
+            "duration": 187,
+            "genre": "Trap",
+            "release_date": "2024-04-26",
+            "url": "/src/songs/xclusivo.mp3",
+            "photo": "https://i1.sndcdn.com/artworks-RvGfzLgzN61FbYAJ-vzTzUw-t500x500.jpg"
+        },
+        {
+            "id": 6,
+            "title": "TU SILUETA",
+            "artist_id": 6,
+            "duration": 173,
+            "genre": "Hip-hop",
+            "release_date": "2024-25-11",
+            "url": "/src/songs/tu_silueta.mp3",
+            "photo": "https://i1.sndcdn.com/artworks-YedWcRXdJDTe6IbP-KEoeLg-t500x500.jpg"
+        },
+        {
+            "id": 7,
+            "title": "GOTERAS",
+            "artist_id": 7,
+            "duration": 220,
+            "genre": "Urban",
+            "release_date": "2024-05-02",
+            "url": "/src/songs/goteras.mp3",
+            "photo": "https://i1.sndcdn.com/artworks-4TXa5gfUqGtaiGfj-ZIlXzA-t500x500.jpg"
+        },
+        {
+            "id": 8,
+            "title": "AMARGURA",
+            "artist_id": 8,
+            "duration": 169,
+            "genre": "Urban",
+            "release_date": "2023-04-18",
+            "url": "/src/songs/amargura.mp3",
+            "photo": "https://i1.sndcdn.com/artworks-gddrYsH3o4boDC1s-CX03XQ-t500x500.jpg"
+        },
+        {
+            "id": 9,
+            "title": "Ohnana",
+            "artist_id": 9,
+            "duration": 156,
+            "genre": "Pop",
+            "release_date": "2024-07-13",
+            "url": "/src/songs/ohnana.mp3",
+            "photo": "https://i1.sndcdn.com/artworks-gfFF1MCVSim2f71s-4VQ1Pw-t240x240.jpg"
+        },
+        {
+            "id": 10,
+            "title": "LA FALDA",
+            "artist_id": 10,
+            "duration": 227,
+            "genre": "Bachata",
+            "release_date": "2023-01-09",
+            "url": "/src/songs/la_falda.mp3",
+            "photo": "https://i1.sndcdn.com/artworks-gfFF1MCVSim2f71s-4VQ1Pw-t240x240.jpg"
+        },
+        {
+            "id": 11,
+            "title": "Old Town Road",
+            "artist_id": 11,
+            "duration": 157,
+            "genre": "Pop",
+            "release_date": "2019-05-17",
+            "url": "/src/songs/old_town_road.mp3",
+            "photo": "https://media.gq.com/photos/5cdeef0e1f8a4e271cddab8d/1:1/w_689,h_689,c_limit/Old-Town-Road-Video-GQ-2019-051719.jpg"
+        },
+        {
+            "id": 12,
+            "title": "Cant Stop The Feeling",
+            "artist_id": 12,
+            "duration": 285,
+            "genre": "Pop",
+            "release_date": "2016-08-27",
+            "url": "/src/songs/cant_stop_the_feeling.mp3",
+            "photo": "https://upload.wikimedia.org/wikipedia/en/2/21/Justin_Timberlake_-_Can%27t_Stop_the_Feeling.png"
+        },
+        {
+            "id": 13,
+            "title": "Best Day of My Life",
+            "artist_id": 13,
+            "duration": 220,
+            "genre": "Alternative",
+            "release_date": "2013-05-19",
+            "url": "/src/songs/best_day_of_my_life.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b273924cda0a9a7e3c8c4a6178aa"
+        },
+        {
+            "id": 14,
+            "title": "MISCO",
+            "artist_id": 14,
+            "duration": 279,
+            "genre": "Rap",
+            "release_date": "2023-07-15",
+            "url": "/src/songs/misco.mp3",
+            "photo": "https://cdns-images.dzcdn.net/images/cover/02877cf050f251a22fe715546ddc8ae2/1900x1900-000000-80-0-0.jpg"
+        }
+        ,
+        {
+            "id": 15,
+            "title": "Rozando la Sierra",
+            "artist_id": 14,
+            "duration": 167,
+            "genre": "Rap",
+            "release_date": "2024-02-28",
+            "url": "/src/songs/rozando_la_sierra.mp3",
+            "photo": "https://cdns-images.dzcdn.net/images/cover/02877cf050f251a22fe715546ddc8ae2/1900x1900-000000-80-0-0.jpg"
+        },  
+        {
+            "id": 16,
+            "title": "On the Floor",
+            "artist_id": 23,
+            "duration": 235,
+            "genre": "Dance-pop",
+            "release_date": "2011-02-11",
+            "url": "/src/songs/on_the_floor.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b2735c7fdd07d99c156401073aaa"
+        },
+        {
+            "id": 17,
+            "title": "Give Me Everything",
+            "artist_id": 15,
+            "duration": 239,
+            "genre": "Dance-pop",
+            "release_date": "2011-03-14",
+            "url": "/src/songs/give_me_everything.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b2733fd475e291907c492f85e213"
+        },
+        {
+            "id": 18,
+            "title": "International Love",
+            "artist_id": 15,
+            "duration": 233,
+            "genre": "Dance-pop",
+            "release_date": "2011-10-03",
+            "url": "/src/songs/international_love.mp3",
+            "photo": "https://i1.sndcdn.com/artworks-Crnwdr8c2W9uziFQ-TF05oQ-t500x500.jpg"
+        },
+        {
+            "id": 19,
+            "title": "I Know You Want Me (Calle Ocho)",
+            "artist_id": 15,
+            "duration": 210,
+            "genre": "Dance-pop",
+            "release_date": "2009-03-17",
+            "url": "/src/songs/i_know_you_want_me.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b273910d2ab59e9e43cd43c08ccc"
+        },
+        {
+            "id": 20,
+            "title": "We Are One (Ole Ola)",
+            "artist_id": 15,
+            "duration": 233,
+            "genre": "Dance-pop",
+            "release_date": "2014-05-15",
+            "url": "/src/songs/we_are_one.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b2737865b65020e76fe0e59cccc7"
+        },
+        {
+            "id": 21,
+            "title": "Time of Our Lives",
+            "artist_id": 15,
+            "duration": 229,
+            "genre": "Dance-pop",
+            "release_date": "2014-07-22",
+            "url": "/src/songs/time_of_our_lives.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b273d6c3ad6a2a27471e1d5e8103"
+        },
+        {
+            "id": 22,
+            "title": "Rain Over Me",
+            "artist_id": 15,
+            "duration": 238,
+            "genre": "Dance-pop",
+            "release_date": "2011-05-13",
+            "url": "/src/songs/rain_over_me.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b2738a5570e4d123f4503b5588ab"
+        },
+        {
+            "id": 23,
+            "title": "Playa del ingles",
+            "artist_id": 24,
+            "duration": 243,
+            "genre": "Reggaeton",
+            "release_date": "2020-11-20",
+            "url": "/src/songs/playa_del_ingles.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b2733c8cfbbb91c7c4e4f71b8c2c"
+        },
+        {
+            "id": 24,
+            "title": "La Curiosidad",
+            "artist_id": 10,
+            "duration": 223,
+            "genre": "Reggaeton",
+            "release_date": "2020-12-19",
+            "url": "/src/songs/la_curiosidad.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b273509c45194c1ef6c1cb509e5d"
+        },
+        {
+            "id": 25,
+            "title": "Diluvio",
+            "artist_id": 16,
+            "duration": 245,
+            "genre": "Reggaeton",
+            "release_date": "2023-06-10",
+            "url": "/src/songs/diluvio.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b273f79b1ab5cd74db6a2d7c1fda"
+        },
+        {
+            "id": 26,
+            "title": "Ley Seca",
+            "artist_id": 17,
+            "duration": 217,
+            "genre": "Trap",
+            "release_date": "2021-09-15",
+            "url": "/src/songs/ley_seca.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b27321ee2e52263690b0b2c80c2a"
+        },
+        {
+            "id": 27,
+            "title": "Last Friday Night (T.G.I.F.)",
+            "artist_id": 3,
+            "duration": 235,
+            "genre": "Pop",
+            "release_date": "2010-07-04",
+            "url": "/src/songs/last_friday_night.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b2736eeee0b3ca099cdde09585d8"
+        },
+        {
+            "id": 28,
+            "title": "Hot n Cold",
+            "artist_id": 3,
+            "duration": 219,
+            "genre": "Pop",
+            "release_date": "2008-09-09",
+            "url": "/src/songs/hot_n_cold.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b2734e837b06165d5d397e235e5b"
+        },
+        {
+            "id": 29,
+            "title": "Firework",
+            "artist_id": 3,
+            "duration": 236,
+            "genre": "Pop",
+            "release_date": "2010-10-25",
+            "url": "/src/songs/firework.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b27398906250a994ea4c50da7cae"
+        },
+        {
+            "id": 30,
+            "title": "Armed and Dangerous",
+            "artist_id": 4,
+            "duration": 222,
+            "genre": "Hip-hop",
+            "release_date": "2018-12-11",
+            "url": "/src/songs/armed_and_dangerous.mp3",
+            "photo": "https://upload.wikimedia.org/wikipedia/en/8/8d/Juice_Wrld_%E2%80%93_Armed_and_Dangerous.png"
+        },
+        {
+            "id": 31,
+            "title": "Se Preparo",
+            "artist_id": 18,
+            "duration": 250,
+            "genre": "Reggaeton",
+            "release_date": "2020-05-29",
+            "url": "/src/songs/se_preparo.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b273b27654722f86a61ee41cd5f3"
+        },
+        {
+            "id": 32,
+            "title": "Limbo",
+            "artist_id": 19,
+            "duration": 238,
+            "genre": "Reggaeton",
+            "release_date": "2013-05-28",
+            "url": "/src/songs/limbo.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b27329866617908a958f41917d76"
+        },
+        {
+            "id": 33,
+            "title": "La Gozadera",
+            "artist_id": 20,
+            "duration": 245,
+            "genre": "Salsa",
+            "release_date": "2015-06-19",
+            "url": "/src/songs/la_gozadera.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b27369f69d3c35919a3ee3e8d124"
+        },
+        {
+            "id": 34,
+            "title": "Arena y Sal",
+            "artist_id": 7,
+            "duration": 220,
+            "genre": "Pop",
+            "release_date": "2019-07-21",
+            "url": "/src/songs/arena_y_sal.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b273956c346f82926e1f60ebbf61"
+        },
+        {
+            "id": 35,
+            "title": "Like a Prayer",
+            "artist_id": 21,
+            "duration": 258,
+            "genre": "Pop",
+            "release_date": "1989-03-21",
+            "url": "/src/songs/like_a_prayer.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b273fabcc97fd6c3d80fae8d959e"
+        },
+        {
+            "id": 36,
+            "title": "Caramelo Remix",
+            "artist_id": 18,
+            "duration": 232,
+            "genre": "Reggaeton",
+            "release_date": "2020-06-24",
+            "url": "/src/songs/caramelo_remix.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b273a00dc9d566a5168b94a6b993"
+        },
+        {
+            "id": 37,
+            "title": "POLARIS Remix",
+            "artist_id": 22,
+            "duration": 225,
+            "genre": "Reggaeton",
+            "release_date": "2021-03-18",
+            "url": "/src/songs/polaris_remix.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b2738f4a278cd5b5b2f65a0f87fd"
+        },
+{
+            "id": 38,
+            "title": "Poker Face",
+            "artist_id":25 ,
+            "duration": 248,
+            "genre": "Pop",
+            "release_date": "2008-09-26",
+            "url": "/src/songs/poker_face.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e02e691217483df8798445c82e2"
+        },
+        {
+            "id": 39,
+            "title": "Just Dance",
+            "artist_id": 25,
+            "duration": 240,
+            "genre": "Pop",
+            "release_date": "2008-04-08",
+            "url": "/src/songs/just_dance.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e02e691217483df8798445c82e2"
+        },
+        {
+            "id": 40,
+            "title": "Judas",
+            "artist_id": 25,
+            "duration": 297,
+            "genre": "Pop",
+            "release_date": "2011-04-15",
+            "url": "/src/songs/judas.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e02a5d31644260279be8d0c46c0"
+        },
+        {
+            "id": 41,
+            "title": "Bad Romance",
+            "artist_id": 25,
+            "duration": 298,
+            "genre": "Pop",
+            "release_date": "2009-10-30",
+            "url": "/src/songs/bad_romance.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e025c9890c0456a3719eeecd8aa"
+        },
+        {
+            "id": 42,
+            "title": "Paparazzi",
+            "artist_id": 25,
+            "duration": 337,
+            "genre": "Pop",
+            "release_date": "2008-07-18",
+            "url": "/src/songs/paparazzi.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e02e691217483df8798445c82e2"
+        },
+        {
+            "id": 43,
+            "title": "Bloody Mary",
+            "artist_id": 25,
+            "duration": 280,
+            "genre": "Pop",
+            "release_date": "2011-11-11",
+            "url": "/src/songs/bloody_mary.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e02a5d31644260279be8d0c46c0"
+        },
+        {
+            "id": 44,
+            "title": "Talking to the Moon",
+            "artist_id": 26,
+            "duration": 204,
+            "genre": "Pop",
+            "release_date": "2010-10-05",
+            "url": "/src/songs/talking_to_the_moon.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e02f60070dce96a2c1b70cf6ff0"
+        },
+        {
+            "id": 45,
+            "title": "Locked Out of Heaven",
+            "artist_id": 26,
+            "duration": 222,
+            "genre": "Pop",
+            "release_date": "2012-10-01",
+            "url": "/src/songs/locked_out_of_heaven.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e02926f43e7cce571e62720fd46"
+        },
+        {
+            "id": 46,
+            "title": "Just the Way You Are",
+            "artist_id": 26,
+            "duration": 243,
+            "genre": "Pop",
+            "release_date": "2010-07-19",
+            "url": "/src/songs/just_the_way_you_are.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e02f60070dce96a2c1b70cf6ff0"
+        },
+        {
+            "id": 47,
+            "title": "The Lazy Song",
+            "artist_id": 26,
+            "duration": 185,
+            "genre": "Pop",
+            "release_date": "2010-03-12",
+            "url": "/src/songs/the_lazy_song.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e02f60070dce96a2c1b70cf6ff0"
+        },
+        {
+            "id": 48,
+            "title": "Treasure",
+            "artist_id": 26,
+            "duration": 216,
+            "genre": "Pop",
+            "release_date": "2013-05-22",
+            "url": "/src/songs/treasure.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e02926f43e7cce571e62720fd46"
+        },
+        {
+            "id": 49,
+            "title": "Starboy",
+            "artist_id": 27,
+            "duration": 239,
+            "genre": "Pop",
+            "release_date": "2016-09-28",
+            "url": "/src/songs/starboy.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e024718e2b124f79258be7bc452"
+        },
+        {
+            "id": 50,
+            "title": "Blinding Lights",
+            "artist_id": 27,
+            "duration": 200,
+            "genre": "Pop",
+            "release_date": "2019-11-29",
+            "url": "/src/songs/blinding_lights.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e028863bc11d2aa12b54f5aeb36"
+        },
+        {
+            "id": 51,
+            "title": "Save Your Tears",
+            "artist_id": 27,
+            "duration": 215,
+            "genre": "Pop",
+            "release_date": "2020-08-03",
+            "url": "/src/songs/save_your_tears.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e028863bc11d2aa12b54f5aeb36"
+        },
+        {
+            "id": 52,
+            "title": "The Hills",
+            "artist_id": 27,
+            "duration": 230,
+            "genre": "Pop",
+            "release_date": "2015-05-27",
+            "url": "/src/songs/the_hills.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e027fcead687e99583072cc217b"
+        },
+        {
+            "id": 53,
+            "title": "Memories",
+            "artist_id": 28,
+            "duration": 213,
+            "genre": "Pop",
+            "release_date": "2019-09-20",
+            "url": "/src/songs/memories.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e0286a8ab515de4b7aef28cd631"
+        },
+        {
+            "id": 54,
+            "title": "Payphone",
+            "artist_id": 28,
+            "duration": 229,
+            "genre": "Pop",
+            "release_date": "2012-04-16",
+            "url": "/src/songs/payphone.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b27320839238d0f69d5486743905"
+        },
+        {
+            "id": 55,
+            "title": "Animals",
+            "artist_id": 28,
+            "duration": 237,
+            "genre": "Pop",
+            "release_date": "2014-09-01",
+            "url": "/src/songs/animals.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d0000b27337677af5b4f23fe9dc8a3c04"
+        },
+        {
+            "id": 56,
+            "title": "Sugar",
+            "artist_id": 28,
+            "duration": 235,
+            "genre": "Pop",
+            "release_date": "2015-01-13",
+            "url": "/src/songs/sugar.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e02442b53773d50e1b5369bb16c"
+        },
+        {
+            "id": 57,
+            "title": "Cold",
+            "artist_id": 28,
+            "duration": 230,
+            "genre": "Pop",
+            "release_date": "2017-02-14",
+            "url": "/src/songs/cold.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e02deae7d931928fc1543e70203"
+        },
+        {
+            "id": 58,
+            "title": "One More Night",
+            "artist_id": 28,
+            "duration": 222,
+            "genre": "Pop",
+            "release_date": "2012-07-16",
+            "url": "/src/songs/one_more_night.mp3",
+            "photo": "https://i.scdn.co/image/ab67616d00001e02fc8633e22a7dba6aab817bff"
+        }
+    ],
+"artists": [
+        {
+            "id": 1,
+            "name": "Queen",
+            "profile_image": "https://m.media-amazon.com/images/M/MV5BMjA3OTc4NWUtMzYxMC00MGUyLTg4MTctYTc4MjA0NjNkYTgxXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "id": 2,
+            "name": "John Lennon",
+            "profile_image": "https://i.scdn.co/image/ab67616d00001e0299581550ef9746ca582bb3cc"
+        },
+        {
+            "id": 3,
+            "name": "Katy Perry",
+            "profile_image": "https://i.scdn.co/image/ab67616d00001e02d5f3739fca04299590fffe59"
+        },
+        {
+            "id": 4,
+            "name": "Juice WRLD",
+            "profile_image": "https://i.scdn.co/image/ab6761610000e5eb1908e1a8b79abf71d5598944"
+        },
+        {
+            "id": 5,
+            "name": "Saiko",
+            "profile_image": "https://i.scdn.co/image/ab6761610000e5ebd3ac55d0cfd372835c182d33"
+        },
+        {
+            "id": 6,
+            "name": "Diegote",
+            "profile_image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84627d6a0f9692ab346fa201ba"
+        },
+        {
+            "id": 7,
+            "name": "Omar Montes",
+            "profile_image": "https://i.scdn.co/image/ab67616d00001e02b97f603621a230afd6e578df"
+        },
+        {
+            "id": 8,
+            "name": "Karol G",
+            "profile_image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84763d3d46a4431f6e62451d21"
+        },
+        {
+            "id": 9,
+            "name": "Kapo",
+            "profile_image": "https://i.scdn.co/image/ab6761610000e5ebd21af7619db28f072b7a9f54"
+        },
+        {
+            "id": 10,
+            "name": "Mike Towers",
+            "profile_image": "https://i.scdn.co/image/ab6761610000e5eb8372345609bebaf1e948ef7f"
+        },
+        {
+            "id": 11,
+            "name": "Lil Nas X",
+            "profile_image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8459fe0168e3afd40d8bdc1d96"
+        },
+        {
+            "id": 12,
+            "name": "Justin Timberlake",
+            "profile_image": "https://lite-images-i.scdn.co/image/ab67656300005f1f06634464f280a610568ab4e1"
+        },
+        {
+            "id": 13,
+            "name": "American Authors",
+            "profile_image": "https://i.scdn.co/image/ab6761610000e5eb76fa6126d926bd6302239aba"
+        },
+        {
+            "id": 14,
+            "name": "Cosco y Lopex",
+            "profile_image": "https://i1.sndcdn.com/artworks-0kZKivErdqC8-0-t240x240.jpg"
+        },
+        {
+            "id": 15,
+            "name": "Pitbull",
+            "profile_image": "https://cdn-p.smehost.net/sites/005297e5d91d4996984e966fac4389ea/wp-content/uploads/2019/10/64b9725fb8121e9c00810e5f2fb09b57.jpg"
+        },
+        {
+            "id": 16,
+            "name": "Rauw Alejandro",
+            "profile_image": "https://i.scdn.co/image/ab6761610000e5eba0881fe672e4e39f9ec0a9e0"
+        },
+        {
+            "id": 17,
+            "name": "Jhayco",
+            "profile_image": "https://i.scdn.co/image/ab67616d0000b273ed133ea8f343f0f451346a44"
+        },
+        {
+            "id": 18,
+            "name": "Ozuna",
+            "profile_image": "https://ritmo95.sbs.co/wp-content/uploads/sites/4/2018/09/Ozuna-090518.jpg"
+        },
+        {
+            "id": 19,
+            "name": "Daddy Yankee",
+            "profile_image": "https://i.scdn.co/image/ab6761610000e5ebaa534de724c7a565c07bb3f5"
+        },
+        {
+            "id": 20,
+            "name": "Gente de Zona",
+            "profile_image": "https://i.scdn.co/image/ab6761610000e5eb3895ad0c64ca0b0c8d539945"
+        },
+        {
+            "id": 21,
+            "name": "Madonna",
+            "profile_image": "https://i.scdn.co/image/ab6761610000e5eb4b36d28b55620959821f4a5b"
+        },
+        {
+            "id": 22,
+            "name": "Feid",
+            "profile_image": "https://i.scdn.co/image/ab6761610000e5eb9e7c05016af970bb9bf76cc1"
+        },
+        {
+            "id": 23,
+            "name": "Jennifer Lopez",
+            "profile_image": "https://i.scdn.co/image/ab67616d0000b273c6df459f80109e7c127795f2"
+        },
+        {
+            "id": 24,
+            "name": "Quevedo",
+            "profile_image": "https://i.scdn.co/image/ab67616d0000b273d53036b726a5a5a1cda5e891"
+        }
+,
+{
+            "id": 25,
+            "name": "Lady Gaga",
+            "profile_image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2"
+        },
+{
+            "id": 26,
+            "name": "Bruno Mars",
+            "profile_image": "https://i.scdn.co/image/ab6761610000e5ebc36dd9eb55fb0db4911f25dd"
+        },
+{
+            "id": 27,
+            "name": "The Weeknd",
+            "profile_image": "https://i.scdn.co/image/ab6761610000e5eb9e528993a2820267b97f6aae"
+        },
+{
+            "id": 28,
+            "name": "Maroon 5",
+            "profile_image": "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evNZY5NHq-default.jpg"
+        }
+	
+    ]
+}
+
+
+
+
