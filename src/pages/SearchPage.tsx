@@ -1,3 +1,4 @@
+import '../style/SearchPage.css';
 import React, { useState } from 'react';
 import SearchResults from '../components/SearchResults';
 import SearchBar from '../components/SearchBar';

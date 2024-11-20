@@ -1,35 +1,29 @@
-import './style/App.css'
-
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import SearchPage from './pages/SearchPage';
-import { Display } from './pages/Display';
-import { ContainerPlayList } from './components/ContainerPlayList';
+import "./style/App.css";
+/* import {Song} from './components/Song.tsx' */
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import SearchPage from "./pages/SearchPage";
+import UserPage from "./pages/UserPage.tsx";
+import Header from "./components/Header.tsx";
+import { ContainerPlayList } from "./components/ContainerPlayList.tsx";
+import { Display } from "./pages/Display.tsx";
 
 function App() {
-
   return (
     <>
-       {/* <Router>
-            <Routes>
-                <Route path="/" element={<ContainerPlayList ids={[1,1,1]} />} />
-                <Route path="/Playlist/:id" element={<Display/>} />
-            </Routes>
-        </Router> */}
-        <Router>
-      <nav>
-        <Link to="/">Inicio</Link>
-        <Link to="/search">Buscar Canciones</Link>
-      </nav>
-      <Routes>
-      <Route path="/" element={<ContainerPlayList ids={[1,1,1]} />} />
-      <Route path="/Playlist/:id" element={<Display/>} />
-      <Route path="/search" element={<SearchPage />} />
-      </Routes>
-      </Router> 
+      <Router>
+        <nav>
+          <Header />
+        </nav>
+        <Routes>
+          <Route path="/UserPage" element={<UserPage/>} />
+          <Route path="/" element={<ContainerPlayList ids={[1,2]} />} />
+          <Route path="/Playlist/:id" element={<Display />} />
+          <Route path="/search" element={<SearchPage />} />
+        </Routes>
+      </Router>
     </>
   )
 }
 
-export default App
+export default App;

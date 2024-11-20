@@ -18,26 +18,37 @@ export function Display() {
     const minutos = `0${Math.trunc(tiempo_total % 3600)}`;
     const duracionPlayList = horas != 0 ? `${horas} h : ${minutos.slice(-2)} min` : `${minutos.slice(-2)} min`;
     return (
-        <>
+        <div className="display-container">
+            <div className="display-container-background" style={{ backgroundImage: `url(${playlist?.url})` }}></div>
             <div className="displayPlaylist-header">
-                <img src={playlist?.url} />
-                <div>
-                    <h3>{playlist?.name}</h3>
-                    <p>{duracionPlayList}</p>
-                </div>
+                <h3>{playlist?.name}</h3>
+                <p>{duracionPlayList}</p>
             </div>
-            <table>
-                <tr>
-                    <td>Titulo</td>
-                    <td>Artista</td>
-                    <td>Género</td>
-                    <td>Duración</td>
-                </tr>
-                {playlist?.songs.map((v: number) => (
-                    v == canciones[v - 1].id ? <tr><td colSpan={4}><Song key={canciones[v - 1].id} id={canciones[v - 1].id} /></td></tr> : null
-                ))}
+            <table className="displayPlaylist-content">
+                <thead className="display-table-head">
+                    <tr className="display-table-header">
+                        <td className="display-table-header-info">
+                            <div className="display-table-header-div1">
+                            <span className="display-table-header-vacio"></span>
+                                <div className="display-table-header-stuff">
+                                    
+                                    <span className="display-table-header-title">Titulo</span>
+                                    <span className="display-table-header-artist">Artista</span>
+                                    <span className="display-table-header-genre">Género</span>
+                                </div>
+                            </div>
+                            <div className="display-table-header-div2">
+                                    <span className="display-table-header-duration">Duración</span>
+                                </div>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody className="display-table-body">
+                    {playlist?.songs.map((v: number) => (
+                        <tr key={canciones[v - 1].id}><td><Song id={canciones[v - 1].id} /></td></tr>
+                    ))}
+                </tbody>
             </table>
-            <a href="/">Inicio</a>
-        </>
+        </div>
     )
 }

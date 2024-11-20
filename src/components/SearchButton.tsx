@@ -1,5 +1,3 @@
-
-
 function SearchButton() {
   return (
     <div className="searchbutton-container">
