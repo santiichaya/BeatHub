@@ -1,5 +1,33 @@
+@font-face {
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Kanit', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -37,6 +65,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

@@ -4,7 +4,7 @@
   margin: 0;
   padding: 2rem;
   text-align: center;
-  font-family: 'Kanit';
+  font-family: 'Kanit', sans-serif;
 }
 
 .main-container {
@@ -87,6 +87,7 @@
   border-radius: 10px;
   overflow: hidden;
   margin: 10px;
+  font-family: 'Kanit', sans-serif;
 }
 
 .search-result-song-div {
@@ -396,10 +397,11 @@ nav a.searchcont {
 .display-container {
   margin-top: 6rem;
   height: auto;
+  font-family: 'Kanit', sans-serif;
 }
 
 .displayPlaylist-header {
-  position: fixed;
+  position: relative;
   left: 0;
   right: 0;
   z-index: 999;
@@ -409,12 +411,13 @@ nav a.searchcont {
 }
 
 .displayPlaylist-content {
-  position: fixed;
-  top: 17rem;
+  position: relative;
   left: 0;
   right: 0;
-  z-index: 999;
   width: 100%;
+  overflow-y: auto;
+  max-height: calc(100vh - 17rem);
+  z-index: 999;
 }
 
 .displayPlaylist-header h3 {
@@ -445,6 +448,7 @@ nav a.searchcont {
   padding: 2rem;
   margin-right: 1.823rem;
   margin-bottom: 1rem;
+  font-family: 'Kanit', sans-serif;
 }
 
 .playlists-section {
@@ -461,6 +465,7 @@ nav a.searchcont {
 }
 
 .playlist-presentation {
+  font-family: 'Kanit', sans-serif;
   display: flex;
   align-items: start;
   margin: 0;
@@ -514,6 +519,7 @@ nav a.searchcont {
 .display-table-header-title {
   width: 35%;
   text-align: start;
+  font-family: 'Kanit', sans-serif;
 }
 
 .display-table-header-artist {
