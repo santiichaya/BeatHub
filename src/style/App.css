@@ -444,10 +444,12 @@ nav a.searchcont {
 
 .playlist-container {
   display: flex;
-  height: 8rem;
-  width: auto;
+  height: 12rem;
+  width: 10rem;
+  justify-content: center;
+  align-content: center;
   padding: 2rem;
-  margin-right: 1.823rem;
+  margin-right: 1rem;
   margin-bottom: 1rem;
   font-family: 'Kanit', sans-serif;
 }
