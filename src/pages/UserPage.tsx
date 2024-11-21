@@ -20,7 +20,7 @@ function UserPage() {
             <div className="user">
                 <img className="user-img" src="src/assets/profilePicture.jpg" alt="Foto de Perfil" />
                 <span className="user-name">{user ? user.username : 'Usuario no encontrado'}</span>
-                <Song id={3} showOnlyPlayButton={true} /> 
+                <Song id={user!.favorite_song} showOnlyPlayButton={true} /> 
             </div>
 
             <span className="favorite-artists">Artistas favoritos más escuchados (Último mes)</span>

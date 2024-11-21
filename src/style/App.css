@@ -310,6 +310,7 @@ nav a.searchcont {
 .searchbutton-button:focus {
   outline: none;
 }
+
 .artists-section {
   display: flex;
   justify-content: space-between;
@@ -394,7 +395,7 @@ nav a.searchcont {
 
 .display-container {
   margin-top: 6rem;
-  
+  height: auto;
 }
 
 .displayPlaylist-header {
@@ -416,11 +417,11 @@ nav a.searchcont {
   width: 100%;
 }
 
-.displayPlaylist-header h3{
+.displayPlaylist-header h3 {
   font-size: 2rem;
 }
 
-.displayPlaylist-header p{
+.displayPlaylist-header p {
   font-size: 2rem;
 }
 
@@ -433,7 +434,7 @@ nav a.searchcont {
   min-height: 90vh;
   width: 100vw;
   background-size: cover;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   filter: blur(8px);
 }
 
@@ -532,8 +533,8 @@ nav a.searchcont {
 }
 
 
-@media  (max-width: 500px){
-  *{
+@media (max-width: 500px) {
+  * {
     font-size: small;
   }
 }

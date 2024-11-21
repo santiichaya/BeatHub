@@ -26,7 +26,7 @@
             "username": "Melen",
             "email": "melen@music.com",
             "password": "123456",
-            "favorite_song": 4
+            "favorite_song": 14
         },
         {
             "id": 4,
@@ -262,7 +262,7 @@
             "genre": "Rap",
             "release_date": "2024-02-28",
             "url": "/src/songs/rozando_la_sierra.mp3",
-            "photo": "https://cdns-images.dzcdn.net/images/cover/02877cf050f251a22fe715546ddc8ae2/1900x1900-000000-80-0-0.jpg"
+            "photo": "https://i1.sndcdn.com/artworks-0kZKivErdqC8-0-t240x240.jpg"
         },  
         {
             "id": 16,
@@ -764,7 +764,7 @@
         {
             "id": 14,
             "name": "Cosco y Lopex",
-            "profile_image": "https://i1.sndcdn.com/artworks-0kZKivErdqC8-0-t240x240.jpg"
+            "profile_image": "https://i.imgur.com/iqgnbv8.jpeg"
         },
         {
             "id": 15,
